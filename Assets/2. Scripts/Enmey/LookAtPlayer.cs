@@ -17,11 +17,14 @@ public class LookAtPlayer : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("EnemyAggro").transform;
+        
         transform.rotation = Quaternion.Euler(0,startDeg,0);
     }
 
-    
+    private void FixedUpdate()
+    {
+        player = GameObject.FindGameObjectWithTag("EnemyAggro").transform;
+    }
 
     public void LookPlayer()
     {
