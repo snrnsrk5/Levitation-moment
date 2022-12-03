@@ -7,15 +7,15 @@ public class SecondaryBattery : MonsterFSM_Behaviour
 
     ShipEnemy shipEnemy;
 
-    [SerializeField]
-    private bool imDie = false;
+
+
+    public GameObject healthBar;
     private void Awake()
     {
         hp = maxHp;
-        imDie = false;
-        //shipEnemy.TotalHpMax(maxHp); //이걸 시스템으로도 할수 있나? new로 해가지고 
     }
 
+    private Transform healthBarTrans;
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -35,10 +35,20 @@ public class SecondaryBattery : MonsterFSM_Behaviour
         
 
         healthSystem = new HealthSystem(maxHp);
-        healthBar.Setup(healthSystem);
-        
+        GameObject newHealthBar = Instantiate(healthBar, new Vector3(transform.GetChild(0).position.x , transform.GetChild(0).position.y, transform.GetChild(0).position.z ), Quaternion.identity);
+        newHealthBar.transform.SetParent(transform.GetChild(0));
+        newHealthBar.GetComponent<HealthBar>().Setup(healthSystem);
+
+        newHealthBar.transform.localPosition = Vector3.zero;
+
+
+        newHealthBar.transform.localPosition = new Vector3(0, 0, 0.03f);
+
+
     }
 
+
+ 
     public override void OnExecuteAttack(int attackIndex)
     {
         if(getFlagLive)
@@ -86,6 +96,15 @@ public class SecondaryBattery : MonsterFSM_Behaviour
 
         }
     }
+    protected override void Update()
+    {
+        OnCheckAtkBehaviour();
+        base.Update();
+
+    }
+
+
+
 
 
 }

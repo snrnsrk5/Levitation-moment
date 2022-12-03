@@ -1,22 +1,17 @@
-using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
-using UnityEngine.UIElements;
-using System.Reflection.Emit;
- 
-public class MonsterFSM_Behaviour  : MonsterFSM, IAtkAble, IDmgAble
-{ 
+
+public class MonsterFSM_Behaviour : MonsterFSM, IAtkAble, IDmgAble
+{
     [SerializeField]
     protected List<AtkBehaviour> attackBehaviours = new List<AtkBehaviour>();
-      
+
     public AtkBehaviour nowAtkBehaviour //setDamage를
     {
         get;
         private set;
     }
-     
+
     public int maxHp = 100;
 
     public int hp;
@@ -37,65 +32,62 @@ public class MonsterFSM_Behaviour  : MonsterFSM, IAtkAble, IDmgAble
 
     protected HealthSystem healthSystem;
 
-    public HealthBar healthBar;
 
     protected override void Start()
-    { 
+    {
         base.Start();
- 
+
 
 
         fsmManager.AddStateList(new stateMove());
         fsmManager.AddStateList(new stateAtk());
         fsmManager.AddStateList(new stateDie());
-          
-        OnAwakeAtkBehaviour();
-         
-        atkRange = nowAtkBehaviour?.atkRange ?? 5.0f;
-        hp = maxHp;
 
-        healthSystem = new HealthSystem(maxHp);
-        healthBar.Setup(healthSystem);
+        OnAwakeAtkBehaviour();
+
+        atkRange = nowAtkBehaviour?.atkRange ?? 5.0f;
+
+
     }
-      
+
     protected override void Update()
-    { 
+    {
         OnCheckAtkBehaviour();
         base.Update();
     }
 
 
-   public override bool getFlagAtk
-   {
-       get
-       {
-           if (!target)
-           {
-               return false;
-           }
+    public override bool getFlagAtk
+    {
+        get
+        {
+            if (!target)
+            {
+                return false;
+            }
 
             float distance = Vector3.Distance(transform.position, target.position);
             //Debug.Log("distance : " + distance + ">>>>>> atkRange" + atkRange);
             return (distance <= atkRange);
-       }
-   }
-
-    public  J ChangeState<J>() where J : State<MonsterFSM>
-    {
-       return fsmManager.ChangeState<J>();
+        }
     }
-    
+
+    public J ChangeState<J>() where J : State<MonsterFSM>
+    {
+        return fsmManager.ChangeState<J>();
+    }
+
     override public Transform SearchMonster()
     {
-    return base.target;
-    } 
+        return base.target;
+    }
 
     public virtual void OnExecuteAttack(int attackIndex)
     {
 
         //Debug.Log("발사");
         if (nowAtkBehaviour != null && target != null)
-        { 
+        {
             nowAtkBehaviour.callAtkMotion(target.gameObject, launchWeaponTransform);
         }
     }
@@ -108,21 +100,25 @@ public class MonsterFSM_Behaviour  : MonsterFSM, IAtkAble, IDmgAble
             {
                 nowAtkBehaviour = behaviour;
             }
-     
+
             behaviour.targetLayerMask = targetLayerMask;
-        } 
+        }
     }
 
     protected void OnCheckAtkBehaviour()
-    { 
-        if (nowAtkBehaviour == null || !nowAtkBehaviour.IsAvailable)
-        { 
+    {
+        if (nowAtkBehaviour == null || !nowAtkBehaviour.IsAvailable) //공격이 불가능하면 
+        {
+            //현재 공격함수가 공격불가능하면
             nowAtkBehaviour = null;
-             
+
             foreach (AtkBehaviour behaviour in attackBehaviours)
-            { 
-                if (behaviour.IsAvailable)
-                { 
+            {
+                //다른 클래스훓다가 
+                if (behaviour.IsAvailable) //공격가능하면
+                {
+
+                    // now가 널이고, 현재 중요도가 다른 behaviour보다 적다면
                     if ((nowAtkBehaviour == null) || (nowAtkBehaviour.importanceAtkNo < behaviour.importanceAtkNo)) //이게 중요도구나 //숫자가 제일낮은거부터 실행
                     {
                         nowAtkBehaviour = behaviour;
@@ -136,11 +132,11 @@ public class MonsterFSM_Behaviour  : MonsterFSM, IAtkAble, IDmgAble
 
 
     //5. 공격을 직접적으로 받았을 때   이제 helth로 판정 하면 된다 
-   public virtual void setDmg(int dmg, GameObject atkEffectPrefab)
+    public virtual void setDmg(int dmg, GameObject atkEffectPrefab)
     {
         Debug.Log("셋데미지");
         //죽었냐 ?
-        if(!getFlagLive)
+        if (!getFlagLive)
         {
             //데미지 처리 안함 
             return;
@@ -168,5 +164,5 @@ public class MonsterFSM_Behaviour  : MonsterFSM, IAtkAble, IDmgAble
             fsmManager.ChangeState<stateDie>(); //
         }
     }
-     
+
 }
