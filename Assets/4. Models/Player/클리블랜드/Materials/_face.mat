@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1458004415055709769
+--- !u!114 &-8768035952882715091
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: _cloth
+  m_Name: _face
   m_Shader: {fileID: 4800000, guid: 9294844b15dca184d914a632279b24e1, type: 3}
   m_ValidKeywords:
   - ANTI_FLICKER
@@ -65,11 +65,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 2800000, guid: 888486cf9f5113848845bb61646b591c, type: 3}
+        m_Texture: {fileID: 2800000, guid: b93d7c313ce5cdf439f2db73e8f249fe, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 888486cf9f5113848845bb61646b591c, type: 3}
+        m_Texture: {fileID: 2800000, guid: b93d7c313ce5cdf439f2db73e8f249fe, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Bump2ndMap:
@@ -177,7 +177,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 9d53f33f77939c346a10dcb50d08227b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 37032c557fc51454c88c0c906f9fc0bd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MatCap2ndBlendMask:
@@ -213,7 +213,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
-        m_Texture: {fileID: 2800000, guid: 9d53f33f77939c346a10dcb50d08227b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 37032c557fc51454c88c0c906f9fc0bd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineVectorTex:
