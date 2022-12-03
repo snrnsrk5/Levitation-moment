@@ -26,7 +26,7 @@ public class GunRecoil : MonoBehaviour
     private bool isRun = false;
     private bool isGun = false;
 
-    
+
 
     public GameObject Bullet;
     public GunData[] gunDatas;
@@ -45,12 +45,34 @@ public class GunRecoil : MonoBehaviour
             isGun = true;
             isRun = true;
 
-           /* for (int i = 0; i < FirePos.Length; i++)
+            for (int i = 0; i < gunDatas.Length; i++)
             {
-                Instantiate(Bullet, FirePos[i].transform.position, FirePos[i].transform.rotation);
-            }*/
+                float rol = 1;
+                for (int bar = 0; bar < gunDatas[i].barrel; bar++)
+                {
+                    float rng = Random.RandomRange(0.1f, 1f);
+                    Instantiate(Bullet, gunDatas[i].pos.transform.position, gunDatas[i].pos.transform.rotation
+                        * Quaternion.Euler(rng * 0.5f, bar * rng, rng * 0.5f));
 
-            if (i == gunDatas.Length) i = 0;
+                    rol *= -1;
+                }
+
+            }
+
+            gunDatas[i].particleSystem.Play();
+
+            pitch = Random.RandomRange(0.8f, 1.2f);
+            gunDatas[i].gunSound.pitch = pitch;
+            gunDatas[i].gunSound.Play();
+           
+            re = 0;
+            reload = 0;
+
+            mp = Random.Range(0, 2);
+            St();
+
+
+            /*if (i == gunDatas.Length) i = 0;
 
             float rol = 1;
             for (int bar = 0; bar < gunDatas[i].barrel; bar++)
@@ -72,8 +94,8 @@ public class GunRecoil : MonoBehaviour
             reload = 0;
 
             mp = Random.Range(0, 2);
-            
-            St();
+
+            St();*/
         }
 
         if (Input.GetMouseButton(1))
@@ -88,7 +110,7 @@ public class GunRecoil : MonoBehaviour
 
     void RunTime()
     {
-        if(isRun)
+        if (isRun)
         {
             re += 1 * Time.deltaTime;
 
@@ -98,14 +120,14 @@ public class GunRecoil : MonoBehaviour
                 Fi();
             }
         }
-        
+
     }
     void GunTime()
     {
         if (isGun)
         {
             reload += 1 * Time.deltaTime;
-            
+
             if (reload > randomReloadTime)
             {
                 randomReloadTime = reloadTime + Random.RandomRange(-(reload * 0.1f), (reload * 0.1f));
@@ -116,7 +138,7 @@ public class GunRecoil : MonoBehaviour
 
     void St()
     {
-        if(mp == 0)
+        if (mp == 0)
         {
             Player.transform.DORotate(new Vector3(Player.xRotate -= Random.RandomRange(recoil * 1f, recoil * 1.5f),
             Player.yRotate += Random.RandomRange(recoil * 0.5f, recoil * 0.75f), 0), 0.025f);
