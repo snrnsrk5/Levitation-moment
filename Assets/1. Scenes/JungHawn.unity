@@ -161,6 +161,10 @@ MonoBehaviour:
   - {fileID: 1265346465}
   - {fileID: 1385106722}
   - {fileID: 784382849}
+  model:
+  - {fileID: 452927983}
+  - {fileID: 1647853693}
+  - {fileID: 93937336}
   t: 0
   isT: 0
   ch: 0
@@ -503,10 +507,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 105541815}
-  loop: 29
-  count: 3
-  particleSystem: {fileID: 1251164401}
 --- !u!82 &105541815
 AudioSource:
   m_ObjectHideFlags: 0
@@ -786,11 +786,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1025979351}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &136339491 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1025979351}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &143999401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -962,10 +957,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 144522558}
-  loop: 8
-  count: 6.2
-  particleSystem: {fileID: 858256477}
 --- !u!82 &144522558
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2003,11 +1994,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1662115223}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &181958781 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1662115223}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &194898543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2437,11 +2423,6 @@ PrefabInstance:
 --- !u!4 &212118931 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1645164578}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &212118933 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1645164578}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &219431517
@@ -3102,10 +3083,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 275752611}
-  loop: 29
-  count: 3.6
-  particleSystem: {fileID: 290772611}
 --- !u!82 &275752611
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3217,11 +3194,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1813245640}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &290772611 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1813245640}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &298043322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3234,10 +3206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 298043323}
-  loop: 29
-  count: 3.2
-  particleSystem: {fileID: 704074055}
 --- !u!82 &298043323
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3548,11 +3516,6 @@ AudioSource:
 --- !u!4 &342722148 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1594368230}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &342722150 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1594368230}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &364884289 stripped
@@ -5187,10 +5150,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 561969122}
-  loop: 8
-  count: 5.7
-  particleSystem: {fileID: 136339491}
 --- !u!82 &561969122
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5326,11 +5285,6 @@ Transform:
 --- !u!4 &582392982 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 371457061}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &582392984 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 371457061}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &584960797
@@ -5988,10 +5942,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 647525194}
-  loop: 8
-  count: 0
-  particleSystem: {fileID: 711688095}
 --- !u!82 &647525194
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6110,10 +6060,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 664510991}
-  loop: 8
-  count: 5
-  particleSystem: {fileID: 959636226}
 --- !u!82 &664510991
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6507,11 +6453,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1112867134}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &704074055 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1112867134}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -6630,11 +6571,6 @@ MonoBehaviour:
 --- !u!4 &711688093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1671542031}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &711688095 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1671542031}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &715269031
@@ -6886,10 +6822,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 745399950}
-  loop: 8
-  count: 6.4
-  particleSystem: {fileID: 1867119413}
 --- !u!82 &745399950
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7446,10 +7378,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 767636156}
-  loop: 8
-  count: 0
-  particleSystem: {fileID: 1831332396}
 --- !u!82 &767636156
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7755,10 +7683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 780211157}
-  loop: 8
-  count: 0
-  particleSystem: {fileID: 942085148}
 --- !u!82 &780211157
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8114,11 +8038,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1572575554}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &858256477 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1572575554}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &859154174
 GameObject:
   m_ObjectHideFlags: 0
@@ -8165,10 +8084,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 860768415}
-  loop: 8
-  count: 5.4
-  particleSystem: {fileID: 1047028893}
 --- !u!82 &860768415
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8766,11 +8681,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 667616192}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &942085148 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 667616192}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &947502991
 GameObject:
   m_ObjectHideFlags: 0
@@ -9047,11 +8957,6 @@ PrefabInstance:
 --- !u!4 &959636224 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1530202459}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &959636226 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1530202459}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &965684945
@@ -9821,11 +9726,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1817653122}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &1047028893 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1817653122}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1051799042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10329,10 +10229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 1080779331}
-  loop: 8
-  count: 5.6
-  particleSystem: {fileID: 1182392280}
 --- !u!82 &1080779331
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10574,10 +10470,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 1090190413}
-  loop: 29
-  count: 3.4
-  particleSystem: {fileID: 1705432564}
 --- !u!82 &1090190413
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11602,11 +11494,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1020779704}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &1182392280 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1020779704}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1195993405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11901,10 +11788,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 1210482198}
-  loop: 8
-  count: 0
-  particleSystem: {fileID: 582392984}
 --- !u!82 &1210482198
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12267,11 +12150,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1289338562}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &1251164401 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1289338562}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1252824310
 GameObject:
   m_ObjectHideFlags: 0
@@ -12474,10 +12352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 1286721601}
-  loop: 8
-  count: 0
-  particleSystem: {fileID: 181958781}
 --- !u!82 &1286721601
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14405,11 +14279,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1762207778}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &1568087016 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1762207778}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1572575554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14550,11 +14419,6 @@ PrefabInstance:
 --- !u!4 &1573729829 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 146375930}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &1573729831 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 146375930}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1575031840
@@ -15177,10 +15041,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 1650728123}
-  loop: 8
-  count: 5.8
-  particleSystem: {fileID: 2060106418}
 --- !u!82 &1650728123
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15947,19 +15807,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1416659972}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &1705048460 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1416659972}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1705432562 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1051799042}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &1705432564 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1051799042}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1715667737
@@ -18814,10 +18664,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 1811705272}
-  loop: 8
-  count: 0
-  particleSystem: {fileID: 1939788598}
 --- !u!82 &1811705272
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19453,11 +19299,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 2026121215}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &1831332396 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 2026121215}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1845823446
 GameObject:
   m_ObjectHideFlags: 0
@@ -19570,10 +19411,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 1855978331}
-  loop: 8
-  count: 0
-  particleSystem: {fileID: 1568087016}
 --- !u!82 &1855978331
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19706,11 +19543,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 77180401}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &1867119413 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 77180401}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1896707053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19723,10 +19555,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 1896707054}
-  loop: 8
-  count: 5.2
-  particleSystem: {fileID: 342722150}
 --- !u!82 &1896707054
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20121,10 +19949,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 1932528850}
-  loop: 8
-  count: 6
-  particleSystem: {fileID: 1705048460}
 --- !u!82 &1932528850
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20233,10 +20057,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 1937916524}
-  loop: 8
-  count: 0
-  particleSystem: {fileID: 212118933}
 --- !u!82 &1937916524
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20336,11 +20156,6 @@ AudioSource:
 --- !u!4 &1939788596 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1070562367}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &1939788598 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1070562367}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1950090857
@@ -21892,11 +21707,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479346, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
   m_PrefabInstance: {fileID: 1956183696}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &2060106418 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19801364, guid: 5cd5599e01f32bd418f20a3b9eac1c57, type: 3}
-  m_PrefabInstance: {fileID: 1956183696}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2065201294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22630,10 +22440,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6f58e92263cf74b912a5e35029964a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 2096350269}
-  loop: 8
-  count: 0
-  particleSystem: {fileID: 1573729831}
 --- !u!82 &2096350269
 AudioSource:
   m_ObjectHideFlags: 0
