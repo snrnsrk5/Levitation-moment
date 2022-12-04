@@ -25,7 +25,6 @@ public class SecondaryBattery : MonsterFSM_Behaviour
         fsmManager = new StateMachine<MonsterFSM>(this, new stateIdleBattery());
         fsmManager.AddStateList(new stateAtkBattery());
         fsmManager.AddStateList(new stateMainBatteryDie());
-        fov = GetComponent<FieldOfView>();
 
         OnAwakeAtkBehaviour();
 
@@ -42,7 +41,7 @@ public class SecondaryBattery : MonsterFSM_Behaviour
         newHealthBar.transform.localPosition = Vector3.zero;
 
 
-        newHealthBar.transform.localPosition = new Vector3(0, 0, 0.03f);
+        newHealthBar.transform.localPosition = new Vector3(0, 0.0171f, 0.03f);
 
 
     }
