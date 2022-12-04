@@ -5,7 +5,6 @@ using UnityEngine;
 public class stateIdleBattery : State<MonsterFSM>
 {
     private Animator animator;
-    private BoxCollider boxController;
 
     //protected int hashMove = Animator.StringToHash("Move");
     //protected int hashMoveSpd = Animator.StringToHash("MoveSpd");
@@ -13,7 +12,6 @@ public class stateIdleBattery : State<MonsterFSM>
     public override void OnAwake()
     {
         animator = stateMachineClass.GetComponent<Animator>();
-        boxController = stateMachineClass.GetComponent<BoxCollider>();
     }
 
     public override void OnStart()
@@ -25,8 +23,12 @@ public class stateIdleBattery : State<MonsterFSM>
 
     public override void OnUpdate(float deltaTime)
     {
+
+        Debug.Log("stateMachineClass.target = " + stateMachineClass.target);
         if (stateMachineClass.target)
         {
+
+
             Debug.Log(stateMachineClass.getFlagAtk);
             if (stateMachineClass.getFlagAtk)
             {

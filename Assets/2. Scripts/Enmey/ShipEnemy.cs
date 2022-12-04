@@ -20,7 +20,6 @@ public class ShipEnemy : MonsterFSM_Behaviour
         fsmManager = new StateMachine<MonsterFSM>(this, new stateShipIdle());
         fsmManager.AddStateList(new stateShipMove());
         fsmManager.AddStateList(new stateDie());
-        fov = GetComponent<FieldOfView>();
 
         //OnAwakeAtkBehaviour(); 공격 안할거라
         GetMaxHpSBattery();

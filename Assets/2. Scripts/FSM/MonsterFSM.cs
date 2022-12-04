@@ -11,10 +11,11 @@ public class MonsterFSM : MonoBehaviour
     protected UnityEngine.AI.NavMeshAgent agent;
     protected Animator animator;
 
-    protected FieldOfView fov;
 
 
-    public Transform target => fov?.FirstTarget;
+    public FieldofCollider foc;
+
+    public Transform target => foc?.target;
       
     protected virtual void Start()
     {
@@ -24,9 +25,8 @@ public class MonsterFSM : MonoBehaviour
         fsmManager.AddStateList(new stateAtk());
 
 
-        fov = GetComponent<FieldOfView>();
 
-        
+
     }
 
     protected virtual void Update()
@@ -45,6 +45,7 @@ public class MonsterFSM : MonoBehaviour
     {
         get
         {
+            Debug.Log("getFlagAtk");
             if (!target)
             {
                 return false;
