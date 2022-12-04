@@ -5,11 +5,11 @@ using UnityEngine;
  
 public interface IAtkAble
 { 
-    AtkBehaviour nowAtkBehaviour
+    AtkBehaviour nowAtkBehaviour //이거 왜 해주는 거지
     {
         get;
     }
      
-    void OnExecuteAttack(int atkIdx);
+    void OnExecuteAttack(int atkIdx); //이거 왜해는지, 
 }
  

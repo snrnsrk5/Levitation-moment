@@ -5,7 +5,6 @@ using UnityEngine;
 public class SecondaryBattery : MonsterFSM_Behaviour
 {
 
-    ShipEnemy shipEnemy;
 
 
 
@@ -19,7 +18,6 @@ public class SecondaryBattery : MonsterFSM_Behaviour
     // Start is called before the first frame update
     protected override void Start()
     {
-        shipEnemy = GetComponentInParent<ShipEnemy>();
 
         //Debug.Log("세컨더리 배터리");
         fsmManager = new StateMachine<MonsterFSM>(this, new stateIdleBattery());

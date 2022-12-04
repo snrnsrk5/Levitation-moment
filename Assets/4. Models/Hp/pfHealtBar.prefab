@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70e713dd6324cbf418b92666a3b7b454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  reverseFace: 0
+  reverseFace: 1
   axis: 0
 --- !u!114 &209665881593430597
 MonoBehaviour:

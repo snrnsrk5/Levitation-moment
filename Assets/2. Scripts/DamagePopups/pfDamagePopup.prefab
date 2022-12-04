@@ -9,12 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2920174026715650587}
-  - component: {fileID: 423856985011828138}
   - component: {fileID: 4575248171634617230}
   - component: {fileID: 2800822487669533602}
   - component: {fileID: 6601594393330603769}
-  - component: {fileID: 3074002700512477314}
   - component: {fileID: 5567487843731839382}
+  - component: {fileID: 4537100348035105436}
   m_Layer: 0
   m_Name: pfDamagePopup
   m_TagString: Untagged
@@ -42,14 +41,6 @@ RectTransform:
   m_AnchoredPosition: {x: -30.435705, y: 1.4931417}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!33 &423856985011828138
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2482577687471222703}
-  m_Mesh: {fileID: 0}
 --- !u!23 &4575248171634617230
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -142,7 +133,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -155,8 +146,8 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 1025
+  m_VerticalAlignment: 1024
+  m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: 0
@@ -192,18 +183,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 4575248171634617230}
   m_maskType: 0
---- !u!114 &3074002700512477314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2482577687471222703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e35a65f060248549b93a0de768f64bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5567487843731839382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,3 +197,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reverseFace: 1
   axis: 0
+--- !u!114 &4537100348035105436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482577687471222703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c155edc4aeb75fe4d909a860ba519024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

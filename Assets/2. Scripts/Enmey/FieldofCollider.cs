@@ -17,6 +17,7 @@ public class FieldofCollider : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        target = null;
         if (other.CompareTag("Player"))
         {
             Debug.Log("트리거 세이" + other.gameObject.name);

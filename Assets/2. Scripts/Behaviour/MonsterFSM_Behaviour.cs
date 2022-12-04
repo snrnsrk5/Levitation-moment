@@ -82,6 +82,8 @@ public class MonsterFSM_Behaviour : MonsterFSM, IAtkAble, IDmgAble
         return base.target;
     }
 
+
+    //근데 공격을 여기서 하네
     public virtual void OnExecuteAttack(int attackIndex)
     {
 

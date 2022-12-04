@@ -24,18 +24,21 @@ public abstract class AtkBehaviour : MonoBehaviour
     public LayerMask targetLayerMask;  
 
     [SerializeField]
-    public bool IsAvailable => (nowAtkCoolTime >= atkCoolTime);
+    public bool IsAvailable => (nowAtkCoolTime >= atkCoolTime); //IsAvailable => (now
 
     protected virtual void Start()
     { 
-        nowAtkCoolTime = atkCoolTime;
+        nowAtkCoolTime = atkCoolTime; //없다, 엄마
     }
+
+
+
 
     // Update is called once per frame
     protected void Update()
     {
-        atkCoolTime = Random.Range(3f,  5f);
-        if (nowAtkCoolTime < atkCoolTime)
+       
+        if (nowAtkCoolTime < atkCoolTime) //여기서 이제 쿨타임해주고
         {    
             nowAtkCoolTime += Time.deltaTime;
         }  

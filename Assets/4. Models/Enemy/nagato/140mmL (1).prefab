@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 7800830682510931965}
   - component: {fileID: 7800830682510931966}
   - component: {fileID: 7800830682510931967}
+  - component: {fileID: 2097407120455078311}
   m_Layer: 0
   m_Name: 140mmL (1)
   m_TagString: Enemy
@@ -329,7 +330,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: c31b5ed0a6e4446418628a4b074ec6d6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -348,6 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2d419643d95a4cbc6611a5e51f47d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foc: {fileID: 0}
   atkRange: 53
   attackBehaviours:
   - {fileID: 7800830682510931965}
@@ -360,6 +362,20 @@ MonoBehaviour:
   launchWeaponTransform: {fileID: 7800830681750189041}
   weaponHitTransform: {fileID: 0}
   healthBar: {fileID: 7933872996790585587, guid: 16297bb79bfe96741b22ab330953987f, type: 3}
+--- !u!136 &2097407120455078311
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7800830682510931938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.03
+  m_Height: 0.03
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &7800830681507444269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -847,6 +863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookAtPlayer: {fileID: 7800830682510931936}
+  target: {fileID: 0}
 --- !u!4 &7766641525886556990 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 966a5edc19060994b884da4585a2eca8, type: 3}

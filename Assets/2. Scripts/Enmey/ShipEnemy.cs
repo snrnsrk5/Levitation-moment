@@ -10,10 +10,7 @@ public class ShipEnemy : MonsterFSM_Behaviour
 
 
     public ShipEnemyHealthBar shipEnemyHealthBar;
-    private void Awake()
-    {
-        
-    }
+
     protected override void Start()
     {
 
@@ -42,15 +39,8 @@ public class ShipEnemy : MonsterFSM_Behaviour
             maxHp += tem.hp;
         }
     }
-    private void LateUpdate()
-    {
 
- 
-        //헬스시스템 업데이트에서 이거 해주기
 
-    }
-
-    //이함수는 자식이 피가 까일때마다 실행시켜주기
 
 
     public float GetBatteryCurrentHp() //현재 이걸 받아가지고 업데이트 헬스바 하기

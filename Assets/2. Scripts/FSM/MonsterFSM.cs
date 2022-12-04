@@ -5,7 +5,7 @@ using UnityEngine;
 public class MonsterFSM : MonoBehaviour
 {
 
-    protected StateMachine<MonsterFSM> fsmManager; //클래스에 관리자를 생성
+    protected StateMachine<MonsterFSM> fsmManager; //fsmManager에 Statemachine<MonsterFSM>을 생성
     public StateMachine<MonsterFSM> FsmManager => fsmManager;
 
     protected UnityEngine.AI.NavMeshAgent agent;

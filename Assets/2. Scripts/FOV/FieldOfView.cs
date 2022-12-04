@@ -74,7 +74,7 @@ public class FieldOfView : MonoBehaviour
         StartCoroutine("updateFindTargets", delayFindTime);
     }
      
-    IEnumerator updateFindTargets(float delay)
+    IEnumerator updateFindTargets(float delay) //
     {
         while (true)
         {

@@ -25,6 +25,7 @@ public class BulletMove : MonoBehaviour
             //Debug.Log("���� ������");
             iDmgAble.setDmg(damage, null); //atk ������ �� �ʿ����?
             DamagePopup.Create(other.transform.position, damage, false);
+            //for문으로 
             //�׷��� �÷��̾�� MonsterFsm�� attackBehaviour�� �����ݾ� �׷��� �׷��� 0�̴ϱ� �ȹٲ�ſ���
         }
 
@@ -32,6 +33,8 @@ public class BulletMove : MonoBehaviour
 
     protected virtual void OnTriggerEnter(Collider other)
     {
+
+        Debug.Log("OntriggerEnter Bullet");
         OnProjectileStartCollision(other);
     }
 }

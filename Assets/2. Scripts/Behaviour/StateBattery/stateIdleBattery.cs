@@ -12,6 +12,7 @@ public class stateIdleBattery : State<MonsterFSM>
     public override void OnAwake()
     {
         animator = stateMachineClass.GetComponent<Animator>();
+        //애니메이터 문제? 하지만 applay root motion했다고
     }
 
     public override void OnStart()
@@ -32,6 +33,7 @@ public class stateIdleBattery : State<MonsterFSM>
             Debug.Log(stateMachineClass.getFlagAtk);
             if (stateMachineClass.getFlagAtk)
             {
+                Debug.Log("공격공격");
                 stateMachine.ChangeState<stateAtkBattery>();
             }
           

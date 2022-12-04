@@ -27,10 +27,10 @@ public abstract class State<T>
  
 public sealed class StateMachine<T>
 {  
-    private T stateMachine;
+    private T stateMachine; //MonsterFSM
     private Dictionary<System.Type, State<T>> stateLists  = new Dictionary<System.Type, State<T>>();
 
-    private State<T> nowState;  
+    private State<T> nowState;  //monsterFSM
     public State<T> getNowState => nowState;
      
     private State<T> beforeState;
