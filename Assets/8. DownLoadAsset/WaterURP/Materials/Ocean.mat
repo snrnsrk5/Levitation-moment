@@ -97,7 +97,7 @@ Material:
     - _PlanarReflectionStrength: 0.82
     - _QueueControl: 1
     - _QueueOffset: 0
-    - _RefractionStrength: 0.022
+    - _RefractionStrength: 0.15
     - _ShoreBlend: 1
     - _ShoreDepth: 0.74
     - _ShoreFade: 1
@@ -110,7 +110,7 @@ Material:
     - _SurfaceFoamHeightMask: 0
     - _SurfaceFoamHeightMaskSmoothness: 0
     - _SurfaceFoamShadowProjection: 15
-    - _UnderwaterRefractionStrength: 0.099
+    - _UnderwaterRefractionStrength: 0.102
     - _WaterColorDepth: 0.84
     - _WaterColorHorizonDistance: 20
     m_Colors:
@@ -120,16 +120,16 @@ Material:
     - _LightingDiffuseColor: {r: 0, g: 0, b: 0, a: 0}
     - _LightingSpecularColor: {r: 1, g: 1, b: 1, a: 0}
     - _NormalsMovement: {r: 0.04, g: 0.36, b: 0, a: 0}
-    - _ShoreColor: {r: 0, g: 0.98039216, b: 0.3018171, a: 0}
-    - _SurfaceFoamColor1: {r: 1, g: 1, b: 1, a: 0.3215686}
-    - _SurfaceFoamColor2: {r: 1, g: 1, b: 1, a: 0.7294118}
-    - _SurfaceFoamMovement: {r: 0.7, g: 0, b: 0.47, a: 0.01}
-    - _SurfaceFoamSampling: {r: 1, g: 1.18, b: 0, a: 0}
-    - _SurfaceFoamTilingAndOffset: {r: -1, g: -1, b: 0.57, a: 0.22}
-    - _WaterColorDeep: {r: 0.01176471, g: 0.2861308, b: 0.50980073, a: 1}
-    - _WaterColorHorizon: {r: 0, g: 0.22730729, b: 0.8, a: 1}
+    - _ShoreColor: {r: 0, g: 1, b: 0.30799812, a: 0}
+    - _SurfaceFoamColor1: {r: 0, g: 0.2709963, b: 0.62264144, a: 0.3215686}
+    - _SurfaceFoamColor2: {r: 0, g: 0.08540962, b: 0.28298205, a: 0.7294118}
+    - _SurfaceFoamMovement: {r: 1, g: 0, b: 0.47, a: 0.01}
+    - _SurfaceFoamSampling: {r: 1, g: 3, b: 0, a: 0}
+    - _SurfaceFoamTilingAndOffset: {r: 1, g: 1, b: 0.57, a: 0.22}
+    - _WaterColorDeep: {r: 0.01176471, g: 0.2859952, b: 0.50980073, a: 1}
+    - _WaterColorHorizon: {r: 0, g: 0.22717169, b: 0.8, a: 1}
     - _WaterColorShallow: {r: 0, g: 0.7725491, b: 0.62352943, a: 0.5019608}
-    - _WaterColorUnderwater: {r: 0.20378536, g: 0.30966017, b: 0.517647, a: 1}
+    - _WaterColorUnderwater: {r: 0.20365682, g: 0.30952457, b: 0.517647, a: 1}
     - _WaveColor: {r: 0, g: 0, b: 0, a: 0}
     - _WaveDirections: {r: 0, g: 0.64, b: 1, a: 0.33}
     - _WaveVisuals: {r: 0.122, g: 7.9, b: 3, a: 0}
