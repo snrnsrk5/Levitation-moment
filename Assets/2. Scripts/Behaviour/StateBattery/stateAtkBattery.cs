@@ -27,6 +27,7 @@ public class stateAtkBattery : State<MonsterFSM> //이것도 몬스터가 아니라 종류별
         if (iAtkAble == null || iAtkAble.nowAtkBehaviour == null) //이거 아이들되서 그ㅓㄹㄴ거 아니야? 애니메이터 애니메이션 문제거나, null때문에 idle 되거나
         {
             stateMachine.ChangeState<stateIdleBattery>(); //그러고보니까 이것도 하나 생성해야되니
+            
             Debug.Log("헤헿");
             return;
         }
@@ -49,7 +50,7 @@ public class stateAtkBattery : State<MonsterFSM> //이것도 몬스터가 아니라 종류별
     public void delegateAtkStateEnd()
     {
         UnityEngine.Debug.Log("delegateAtkStateEnd()");
-        stateMachine.ChangeState<stateIdle>();
+        stateMachine.ChangeState<stateIdleBattery>();
     }
 
     public override void OnUpdate(float deltaTime) { }

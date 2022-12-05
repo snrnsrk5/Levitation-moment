@@ -32,7 +32,7 @@ public class stateAtkController : MonoBehaviour
 
     private void stateAtkControllerEnd()
     {
-        //끝나면 뭐뭐뭐
+        //애니메이션이 끝나면ㄴ
     }
      
     public void EventStateAtkStart() //함수 실행할려고 

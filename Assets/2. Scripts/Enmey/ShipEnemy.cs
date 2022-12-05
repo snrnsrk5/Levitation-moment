@@ -5,7 +5,6 @@ using UnityEngine;
 public class ShipEnemy : MonsterFSM_Behaviour
 {
 
-    public int TotalBatteryHp;
     public SecondaryBattery[] secondaryBatterys;
 
 

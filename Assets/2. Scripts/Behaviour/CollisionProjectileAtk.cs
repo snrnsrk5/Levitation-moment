@@ -76,7 +76,7 @@ public class CollisionProjectileAtk : MonoBehaviour
         if (target != null)
         {
             Vector3 vecProjectile = target.transform.position; 
-            vecProjectile.y += 0.7f;
+            //vecProjectile.y += 0.7f;
             transform.LookAt(vecProjectile);
         }
     }
@@ -85,8 +85,8 @@ public class CollisionProjectileAtk : MonoBehaviour
     { 
         if (projectileSpd != 0 && rigidbody != null)
         { 
-            //rigidbody.position += (transform.forward) * (projectileSpd * Time.deltaTime);
-            transform.Translate(Vector3.forward * Time.deltaTime * projectileSpd);
+            rigidbody.position += (transform.forward) * (projectileSpd * Time.deltaTime);
+            //transform.Translate(Vector3.forward * Time.deltaTime * projectileSpd);
         }
     }
      //이것도 부모구나 이것도 이제 다르게 하는구나

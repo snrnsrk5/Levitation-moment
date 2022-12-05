@@ -18,6 +18,9 @@ public class stateDie : State<MonsterFSM>
     public override void OnStart()
     {
         animator?.SetBool(flagLive, false);
+
+
+
     }
 
     public override void OnUpdate(float deltaTime)
