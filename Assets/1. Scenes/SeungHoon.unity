@@ -2923,6 +2923,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1385106723}
   - component: {fileID: 1385106725}
+  - component: {fileID: 1385106726}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -2959,12 +2960,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d8023ef21d9d943bc0e36cb2cae6a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cinemachine: {fileID: 532186879}
-  Player: {fileID: 555598248}
-  reTime: 0.025
+  Recoil: {fileID: 1385106726}
   randomReloadTime: 0
   reloadTime: 0.425
-  recoil: 4.56
   pitch: 0
   Bullet: {fileID: 2882483428165122443, guid: 82cf8886b3540e54eb5bb10ac5bc9b68, type: 3}
   gunDatas:
@@ -2988,6 +2986,22 @@ MonoBehaviour:
     pos: {fileID: 340385722}
     particleSystem: {fileID: 272880143}
     gunSound: {fileID: 340385724}
+--- !u!114 &1385106726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385106722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac9ac14b8e980764fa89b8ec1ac4cb76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 555598248}
+  reTime: 0.05
+  re: 0
+  recoil: 1
 --- !u!1001 &1449351003
 PrefabInstance:
   m_ObjectHideFlags: 0
