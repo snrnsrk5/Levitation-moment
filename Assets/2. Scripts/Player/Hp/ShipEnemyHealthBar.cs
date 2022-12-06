@@ -10,7 +10,7 @@ public class ShipEnemyHealthBar : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("UpdateHealthBar", 0, 0.1f); //0초후 0.1초마다 실행
+        InvokeRepeating("UpdateHealthBar", 0, 0.01f); //0초후 0.1초마다 실행
     }
     public void Setup(HealthSystem healthSystem)
     {
@@ -40,7 +40,7 @@ public class ShipEnemyHealthBar : MonoBehaviour
         //yield return null;
         Debug.Log("ShipEnmeyHealthBa");
      
-        transform.Find("Bar").localScale = new Vector3(shipEnemy.GetBatteryCurrentHp() , 1); //자식 Hp가 안구해졌는데
+        transform.Find("Bar").localScale = new Vector3(shipEnemy.GetBatteryCurrentHp(), 1); //자식 Hp가 안구해졌는데
 
 
     }

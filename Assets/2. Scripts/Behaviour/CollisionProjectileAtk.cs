@@ -24,12 +24,14 @@ public class CollisionProjectileAtk : MonoBehaviour
     //발사체의 대상의 초기위치를 잡기 위해 캐싱 
 
     public GameObject target;
+    //foc를 써야되
 
     //발사체 초기화 
     protected virtual void Start()
     {
         getFlagProjectileCollid = false;
         rigidbody = GetComponent<Rigidbody>();
+        //그냥 target도 있으니까 
 
         //그냥 데미지만 넣어도 괜찮을 거같소
         //만약 소유자가 있다면 
@@ -152,7 +154,11 @@ public class CollisionProjectileAtk : MonoBehaviour
 
     protected virtual void OnTriggerEnter(Collider other)
     {
-        OnProjectileStartCollision(other);
+        if(other.CompareTag("Player"))
+        {
+            OnProjectileStartCollision(other);
+        }
+       
     }
 
     public IEnumerator DestroyParticle(float waittingTime)

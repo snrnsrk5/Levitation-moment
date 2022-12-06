@@ -4,7 +4,11 @@ OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'ko' Physical Memory: 16303 
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
+<<<<<<< HEAD
 C:\Program Files\Unity\Hub\Editor\2021.3.15f1\Editor\Unity.exe
+=======
+D:\Program Files\Unity 2021.3.15f1\Editor\Unity.exe
+>>>>>>> d9653fb95e0705907b1a9e4e4fb47dbaa54fba05
 -adb2
 -batchMode
 -noUpm
@@ -15,9 +19,15 @@ C:/Users/ggms2/OneDrive/문서/GitHub/Levitation-moment
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
+<<<<<<< HEAD
 5051
 Successfully changed project path to: C:/Users/ggms2/OneDrive/문서/GitHub/Levitation-moment
 C:/Users/ggms2/OneDrive/문서/GitHub/Levitation-moment
+=======
+3870
+Successfully changed project path to: C:/Users/USER/Documents/Levitation-moment
+C:/Users/USER/Documents/Levitation-moment
+>>>>>>> d9653fb95e0705907b1a9e4e4fb47dbaa54fba05
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,6 +57,7 @@ C:/Users/ggms2/OneDrive/문서/GitHub/Levitation-moment
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< HEAD
 Player connection [19016] Host "[IP] 172.31.1.26 [Port] 0 [Flags] 2 [Guid] 1253487143 [EditorId] 1253487143 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-POCKNDL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [19016] Host "[IP] 172.31.1.26 [Port] 0 [Flags] 2 [Guid] 1253487143 [EditorId] 1253487143 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-POCKNDL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
@@ -56,6 +67,17 @@ Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.15f1 (e8e88683f834)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/ggms2/OneDrive/문서/GitHub/Levitation-moment/Assets
+=======
+Player connection [12316] Host "[IP] 172.31.1.123 [Port] 0 [Flags] 2 [Guid] 859743731 [EditorId] 859743731 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OHD6DA9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [12316] Host "[IP] 172.31.1.123 [Port] 0 [Flags] 2 [Guid] 859743731 [EditorId] 859743731 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OHD6DA9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 167.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.15f1 (e8e88683f834)
+[Subsystems] Discovering subsystems at path D:/Program Files/Unity 2021.3.15f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/USER/Documents/Levitation-moment/Assets
+>>>>>>> d9653fb95e0705907b1a9e4e4fb47dbaa54fba05
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -64,6 +86,7 @@ Direct3D:
     VRAM:     5980 MB
     Driver:   31.0.15.1748
 Initialize mono
+<<<<<<< HEAD
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
@@ -80,11 +103,30 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1363ms)
 		BeginReloadAssembly (104ms)
+=======
+Mono path[0] = 'D:/Program Files/Unity 2021.3.15f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Program Files/Unity 2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Program Files/Unity 2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56408
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Program Files/Unity 2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.025081 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 178.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.273 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1274ms)
+		BeginReloadAssembly (299ms)
+>>>>>>> d9653fb95e0705907b1a9e4e4fb47dbaa54fba05
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 		EndReloadAssembly (833ms)
 			LoadAssemblies (100ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -99,12 +141,29 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (2ms)
 				ProcessInitializeOnLoadAttributes (169ms)
 				ProcessInitializeOnLoadMethodAttributes (68ms)
+=======
+		EndReloadAssembly (764ms)
+			LoadAssemblies (280ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (195ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (433ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (179ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (171ms)
+				ProcessInitializeOnLoadMethodAttributes (66ms)
+>>>>>>> d9653fb95e0705907b1a9e4e4fb47dbaa54fba05
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.016335 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file data-0000027A3DF20070 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
@@ -8451,3 +8510,6 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+=======
+Registered in 0.011542 seconds.
+>>>>>>> d9653fb95e0705907b1a9e4e4fb47dbaa54fba05

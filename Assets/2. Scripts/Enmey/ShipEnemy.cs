@@ -48,16 +48,30 @@ public class ShipEnemy : MonsterFSM_Behaviour
         //Debug.Log("GetBatter가 실행되니?");
 
         //근데이거 왜케늦냐
-        int batterysHp = 0;
+        float batterysHp = 0;
         foreach (SecondaryBattery tem in secondaryBatterys)
         {
+            if(tem.hp <= 0) //함포체력이 0보다 작거나 같다면
+            {
+                tem.hp = 0;
+            }
 
             batterysHp += tem.hp;
         }
         hp = batterysHp;
 
 
-        
+ 
+        if (getFlagLive)
+        {
+            //animator?.SetTrigger("hitTriggerHash"); /맞는 애니메이션
+        }
+        else
+        {
+            //죽은 상태면 stateDie로 상태 전환 
+            fsmManager.ChangeState<stateDie>(); //
+        }
+
 
         return (float)hp / maxHp;
     }
@@ -73,8 +87,8 @@ public class ShipEnemy : MonsterFSM_Behaviour
         }
 
 
-        hp -= dmg;
-        healthSystem.Damage(dmg); //이것도 자동으로 처리해주는건데
+       // hp -= dmg;
+        //healthSystem.Damage(dmg); //이것도 자동으로 처리해주는건데
         //HealthSystem
         shipEnemyHealthBar.UpdateHealthBar();
 
@@ -85,14 +99,6 @@ public class ShipEnemy : MonsterFSM_Behaviour
 
         //데미지 차감 하고 0 이하가 되면 죽은 상태가 되겠지
         //근데 데미지 차감해도 살아 있는 상태면 
-        if (getFlagLive)
-        {
-            //animator?.SetTrigger("hitTriggerHash"); /맞는 애니메이션
-        }
-        else
-        {
-            //죽은 상태면 stateDie로 상태 전환 
-            fsmManager.ChangeState<stateDie>(); //
-        }
+        
     }
 }

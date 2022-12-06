@@ -12,9 +12,9 @@ public class MonsterFSM_Behaviour : MonsterFSM, IAtkAble, IDmgAble
         private set;
     }
 
-    public int maxHp = 100;
+    public float maxHp = 100;
 
-    public int hp;
+    public float hp;
     //public int Hp
     //{
     //    get ;

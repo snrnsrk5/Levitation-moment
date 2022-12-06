@@ -16,6 +16,8 @@ public class MonsterFSM : MonoBehaviour
     public FieldofCollider foc;
 
     public Transform target => foc?.target;
+
+
       
     protected virtual void Start()
     {
@@ -31,7 +33,7 @@ public class MonsterFSM : MonoBehaviour
 
     protected virtual void Update()
     {
-        fsmManager.Update(Time.deltaTime);  
+        fsmManager.Update(Time.deltaTime);
     }
 
     public virtual Transform SearchMonster()

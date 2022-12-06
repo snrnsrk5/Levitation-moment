@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 2543253732377436977}
   - component: {fileID: 1505513298102332564}
   - component: {fileID: 3675041851814238302}
-  - component: {fileID: 7310715800091497027}
   - component: {fileID: -8551049534158284398}
   - component: {fileID: 8853597342371308217}
-  m_Layer: 10
+  - component: {fileID: -4509560590492044946}
+  m_Layer: 6
   m_Name: SecondaryBullet
-  m_TagString: PlayerBullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,20 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7310715800091497027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2882483428165122443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7980a72e70eff748a5f135a8d6a3185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 50
-  damage: 10
 --- !u!54 &-8551049534158284398
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -129,3 +115,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.012592594, y: 0.012592594, z: 0.033182047}
   m_Center: {x: 0, y: 0, z: 0.008195963}
+--- !u!114 &-4509560590492044946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2882483428165122443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a48722f74f6f96418efcf0237208004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpd: 10
+  ObjProjectileStartEffect: {fileID: 0}
+  ObjProjectileHitEffect: {fileID: 0}
+  projectileStartClip: {fileID: 0}
+  projectileHitClip: {fileID: 0}
+  damage: 10
+  attackBehaviour: {fileID: 0}
+  projectileParents: {fileID: 0}
+  target: {fileID: 0}
