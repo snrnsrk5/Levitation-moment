@@ -27,10 +27,16 @@ public class ProjectileTypeAtkBehaviour : AtkBehaviour
 
             //프리팹이 없어가지고 
             GameObject objProjectile = GameObject.Instantiate<GameObject>(atkEffectPrefab, vecProjectile, Quaternion.identity);
-   
-            objProjectile.transform.forward = transform.forward; //생성한 부모의 forward를 본다. 음 로컬인가
+            //근데 왜 이게 아 rprojedtil이 없으니까 타겟도 없구나
 
+            Vector3 l_vector = target.transform.position - transform.position;
+            Quaternion ro =  Quaternion.LookRotation(l_vector).normalized; //position은ㅇ 벡터
+            objProjectile.transform.forward = transform.forward ; //생성한 부모의 forward를 본다. 음 로컬인가
+            objProjectile.transform.rotation = ro;
+
+            
             CollisionProjectileAtk projectile = objProjectile.GetComponent<CollisionProjectileAtk>(); //오브제는 이걸 가지고 이씅니 하고
+            //bulletMove에는 CollisionprojectilAtk를 상속안받으니까 시발
   
             if (projectile != null)
             {

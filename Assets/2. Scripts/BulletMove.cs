@@ -6,13 +6,19 @@ public class BulletMove : MonoBehaviour
 {
     public float speed;
     public int damage;
+
+    public GameObject target;
     void Start()
     {
         Destroy(gameObject, 5f);
+
+       
+  
     }
     private void Update()
     {
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
+        
+        transform.Translate((Vector3.forward ) * Time.deltaTime * speed);
     }
     protected virtual void OnProjectileStartCollision(Collider other)
     {

@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject player;
 
-    static GameObject Player
+    static public GameObject Player
     {
         get
         {

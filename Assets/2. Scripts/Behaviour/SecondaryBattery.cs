@@ -67,6 +67,12 @@ public class SecondaryBattery : MonsterFSM_Behaviour
 
 
         hp -= dmg;
+        if(hp <= 0) //-가 안되게 하고 
+        {
+            hp = 0;
+        }
+
+
         healthSystem.Damage(dmg);
 
 

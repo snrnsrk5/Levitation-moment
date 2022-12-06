@@ -27,6 +27,7 @@ public class stateDie : State<MonsterFSM>
     {
         if (stateMachine.getStateDurationTime > 3.0f)
         {
+            Debug.Log("ав╠Б");
             GameObject.Destroy(stateMachineClass.gameObject);
         }
     }
