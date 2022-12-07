@@ -39,7 +39,11 @@ public class BulletMove : MonoBehaviour
 
     protected virtual void OnTriggerEnter(Collider other)
     {
+        if(other.CompareTag("Player"))
+        return;
 
+
+        
         Debug.Log("OntriggerEnter Bullet");
         OnProjectileStartCollision(other);
     }
