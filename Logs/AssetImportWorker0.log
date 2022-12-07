@@ -15,7 +15,7 @@ C:/Users/ggms2/OneDrive/문서/GitHub/Levitation-moment
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-3380
+8933
 Successfully changed project path to: C:/Users/ggms2/OneDrive/문서/GitHub/Levitation-moment
 C:/Users/ggms2/OneDrive/문서/GitHub/Levitation-moment
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/ggms2/OneDrive/문서/GitHub/Levitation-moment
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [29312] Host "[IP] 172.31.1.26 [Port] 0 [Flags] 2 [Guid] 3255417019 [EditorId] 3255417019 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-POCKNDL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8620] Host "[IP] 172.31.1.26 [Port] 0 [Flags] 2 [Guid] 4035703872 [EditorId] 4035703872 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-POCKNDL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [29312] Host "[IP] 172.31.1.26 [Port] 0 [Flags] 2 [Guid] 3255417019 [EditorId] 3255417019 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-POCKNDL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8620] Host "[IP] 172.31.1.26 [Port] 0 [Flags] 2 [Guid] 4035703872 [EditorId] 4035703872 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-POCKNDL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 177.16 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 197.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.15f1 (e8e88683f834)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
@@ -67,169 +67,101 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56568
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56396
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010995 seconds.
+Registered in 0.015582 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 180.06 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 154.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.944 seconds
+- Completed reload, in  0.902 seconds
 Domain Reload Profiling:
-	ReloadAssembly (945ms)
-		BeginReloadAssembly (114ms)
+	ReloadAssembly (903ms)
+		BeginReloadAssembly (117ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (667ms)
-			LoadAssemblies (110ms)
+		EndReloadAssembly (619ms)
+			LoadAssemblies (113ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (131ms)
+			SetupTypeCache (134ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (420ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (385ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (180ms)
+				RefreshPlugins (154ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (164ms)
-				ProcessInitializeOnLoadMethodAttributes (63ms)
+				ProcessInitializeOnLoadAttributes (158ms)
+				ProcessInitializeOnLoadMethodAttributes (60ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.013419 seconds.
+Registered in 0.015439 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001A8446DF4B0 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file data-00000227F38A0B20 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A8446DF4B0 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file data-00000227EE405720 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A83F4BE020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file data-00000227F21DA020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.InputSystem.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A83F4BE020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file data-00000227F21DA020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A843CFF9B0 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\lilToon.Editor.External.dll
+Symbol file data-00000227F1E16610 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\lilToon.Editor.External.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A845F1F7F0 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file data-00000227F4BAF070 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 156.79 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 167.71 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.033 seconds
+- Completed reload, in  2.204 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2034ms)
-		BeginReloadAssembly (153ms)
+	ReloadAssembly (2205ms)
+		BeginReloadAssembly (145ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (1709ms)
-			LoadAssemblies (144ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1907ms)
+			LoadAssemblies (146ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (433ms)
+			SetupTypeCache (459ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (88ms)
-			SetupLoadedEditorAssemblies (1002ms)
+			RebuildScriptCaches (92ms)
+			SetupLoadedEditorAssemblies (1154ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (157ms)
-				BeforeProcessingInitializeOnLoad (235ms)
-				ProcessInitializeOnLoadAttributes (441ms)
-				ProcessInitializeOnLoadMethodAttributes (150ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
+				RefreshPlugins (168ms)
+				BeforeProcessingInitializeOnLoad (272ms)
+				ProcessInitializeOnLoadAttributes (510ms)
+				ProcessInitializeOnLoadMethodAttributes (179ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6059 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 106 unused Assets / (13.2 MB). Loaded Objects now: 6462.
-Memory consumption went from 279.1 MB to 265.8 MB.
-Total: 9.426700 ms (FindLiveObjects: 0.543700 ms CreateObjectMapping: 0.497300 ms MarkObjects: 3.341400 ms  DeleteObjects: 5.043200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011074 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001A848F9F010 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A847F07430 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A848E00080 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A848E00080 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A84FBA4A20 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\lilToon.Editor.External.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A84B2B3FC0 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.01 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.214 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2214ms)
-		BeginReloadAssembly (228ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (65ms)
-		EndReloadAssembly (1814ms)
-			LoadAssemblies (167ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (545ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (83ms)
-			SetupLoadedEditorAssemblies (941ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (22ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (292ms)
-				ProcessInitializeOnLoadAttributes (489ms)
-				ProcessInitializeOnLoadMethodAttributes (122ms)
-				AfterProcessingInitializeOnLoad (14ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.62 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5836 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 84 unused Assets / (13.2 MB). Loaded Objects now: 6477.
-Memory consumption went from 266.4 MB to 253.2 MB.
-Total: 10.032200 ms (FindLiveObjects: 0.473200 ms CreateObjectMapping: 0.522800 ms MarkObjects: 3.531200 ms  DeleteObjects: 5.504000 ms)
+Unloading 6061 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 106 unused Assets / (13.3 MB). Loaded Objects now: 6464.
+Memory consumption went from 279.1 MB to 265.9 MB.
+Total: 9.838200 ms (FindLiveObjects: 0.672400 ms CreateObjectMapping: 0.618200 ms MarkObjects: 3.661600 ms  DeleteObjects: 4.884700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -243,41 +175,376 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 50725.123035 seconds.
-  path: Assets/1. Scenes/SeungHoon.unity
-  artifactKey: Guid(6f9070d1bcd96b54fb4610babd18a93a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/1. Scenes/SeungHoon.unity using Guid(6f9070d1bcd96b54fb4610babd18a93a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e352b5208b6b7beb6e39a502e9ef13c0') in 0.013760 seconds 
+  Time since last request: 43764.046709 seconds.
+  path: Assets/4. Models/Collider/New Material.mat
+  artifactKey: Guid(dac4b9ec486a8e549a9eaa257f491b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/Collider/New Material.mat using Guid(dac4b9ec486a8e549a9eaa257f491b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19cb65365ae3b16889c7a33c0f84c7b2') in 0.342758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.047610 seconds.
+  path: Assets/4. Models/Enemy/nagato/Nagato_Enemy.fbx
+  artifactKey: Guid(1dc553b45e2ffc845b52774c09f8758a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/Enemy/nagato/Nagato_Enemy.fbx using Guid(1dc553b45e2ffc845b52774c09f8758a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35c5dc6009d4bd1536e26f12c9bb8b29') in 0.534756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.764269 seconds.
+  path: Assets/4. Models/Player/유키카제/유키카제.fbx
+  artifactKey: Guid(4e02852a7de8ba246b625fa09f3f4cbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/Player/유키카제/유키카제.fbx using Guid(4e02852a7de8ba246b625fa09f3f4cbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '393cd6e66b675cc8db87c6159e447164') in 0.093106 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.011254 seconds.
+Registered in 0.014922 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001A84607F010 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file data-00000227F953B020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A84F6ACF10 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file data-00000227EDD949B0 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A847E42010 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file data-00000227F35EC020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.InputSystem.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A847E42010 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file data-00000227F35EC020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A8437CBA70 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\lilToon.Editor.External.dll
+Symbol file data-00000227F9544A30 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\lilToon.Editor.External.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001A8496E5A60 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file data-00000227F7501020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.97 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.878 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1879ms)
+		BeginReloadAssembly (191ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1573ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (398ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (877ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (205ms)
+				ProcessInitializeOnLoadAttributes (500ms)
+				ProcessInitializeOnLoadMethodAttributes (135ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5845 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 84 unused Assets / (13.2 MB). Loaded Objects now: 6569.
+Memory consumption went from 286.7 MB to 273.5 MB.
+Total: 10.710200 ms (FindLiveObjects: 0.598800 ms CreateObjectMapping: 0.439400 ms MarkObjects: 3.791900 ms  DeleteObjects: 5.879200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013258 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000227F95BA020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000227F29DE430 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000227F35EC020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000227F35EC020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A020413A0 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\lilToon.Editor.External.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000227EE40EC40 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.278 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2279ms)
+		BeginReloadAssembly (213ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (62ms)
+		EndReloadAssembly (1900ms)
+			LoadAssemblies (159ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (543ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (79ms)
+			SetupLoadedEditorAssemblies (981ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (275ms)
+				ProcessInitializeOnLoadAttributes (521ms)
+				ProcessInitializeOnLoadMethodAttributes (143ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5846 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 84 unused Assets / (13.2 MB). Loaded Objects now: 6584.
+Memory consumption went from 286.8 MB to 273.6 MB.
+Total: 15.412500 ms (FindLiveObjects: 0.971400 ms CreateObjectMapping: 0.515000 ms MarkObjects: 5.386100 ms  DeleteObjects: 8.538900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2579.117415 seconds.
+  path: Assets/4. Models/1.PreFab
+  artifactKey: Guid(87e6eb05f5a48f947b48bc5e74aebdc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab using Guid(87e6eb05f5a48f947b48bc5e74aebdc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1bc69d420d1acc1d074eac372f19c6a') in 0.014023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.014673 seconds.
+  path: Assets/4. Models/Enemy
+  artifactKey: Guid(7035ef46bb5e3f84e9b5011859ad5e55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/Enemy using Guid(7035ef46bb5e3f84e9b5011859ad5e55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82945628da3a364eeddefb84399f27eb') in 0.005824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.740135 seconds.
+  path: Assets/4. Models/Enemy/nagato/N1204.prefab
+  artifactKey: Guid(8a06decc31163ca4a8ab2aca2ecd3110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/Enemy/nagato/N1204.prefab using Guid(8a06decc31163ca4a8ab2aca2ecd3110) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Asset 'SecondaryAnime': Transition 'New State -> Exit' in state 'New State' doesn't have an Exit Time or any condition, transition will be ignored
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\build\output\unity\unity\Editor\Src\Animation\StateMachine.cpp line 1845]
+
+ -> (artifact id: '174836491cde565dcdbb4e26810d5218') in 0.594878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/4. Models/Enemy/nagato/Nagato_EnemySeungh.prefab
+  artifactKey: Guid(a0f15a97b52599848a75346bba750011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/Enemy/nagato/Nagato_EnemySeungh.prefab using Guid(a0f15a97b52599848a75346bba750011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '296eae7a1cfe205f166d05b1e51e88e5') in 0.075253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.424845 seconds.
+  path: Assets/4. Models/1.PreFab/Player
+  artifactKey: Guid(70a3bc06c3df0c14aaccc0cf6710d635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player using Guid(70a3bc06c3df0c14aaccc0cf6710d635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd55d1aba9619d30c2a3390e361324c5') in 0.006962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.278167 seconds.
+  path: Assets/4. Models/1.PreFab/Player/세인트루이스.prefab
+  artifactKey: Guid(b2b29f781ce95994cab5da5a75be873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player/세인트루이스.prefab using Guid(b2b29f781ce95994cab5da5a75be873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eeaeedde5585aa217ec4208eabd887d') in 0.094608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/4. Models/1.PreFab/Player/클리블랜드.prefab
+  artifactKey: Guid(3057815847ab0ec4ab92bbc6770cd8ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player/클리블랜드.prefab using Guid(3057815847ab0ec4ab92bbc6770cd8ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c13756b9c61bbde1706d612111961f7') in 0.079489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.146645 seconds.
+  path: Assets/4. Models/1.PreFab/Manager
+  artifactKey: Guid(b752eefd7194e12498c9e59d2755d26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Manager using Guid(b752eefd7194e12498c9e59d2755d26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89481bced07cf6a37ddaedf1e8506d99') in 0.005351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.687378 seconds.
+  path: Assets/4. Models/1.PreFab/Manager/PlayerChanger.prefab
+  artifactKey: Guid(48fc7c9f02f22b8448885d1639cdcc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Manager/PlayerChanger.prefab using Guid(48fc7c9f02f22b8448885d1639cdcc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deea2ed930f0b5cdf8eda253fdd278e9') in 0.008399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.881813 seconds.
+  path: Assets/1. Scenes/SeungHoon.unity
+  artifactKey: Guid(6f9070d1bcd96b54fb4610babd18a93a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1. Scenes/SeungHoon.unity using Guid(6f9070d1bcd96b54fb4610babd18a93a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78f73f41116ff4ce995fa0b60bc7e658') in 0.006220 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 301.399496 seconds.
+  path: Assets/4. Models/1.PreFab/Player/세인트루이스.prefab
+  artifactKey: Guid(b2b29f781ce95994cab5da5a75be873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player/세인트루이스.prefab using Guid(b2b29f781ce95994cab5da5a75be873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab2af5874f98a9c38e4fbbe8b01f292c') in 0.072597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.480757 seconds.
+  path: Assets/4. Models/1.PreFab/Player/세인트루이스.prefab
+  artifactKey: Guid(b2b29f781ce95994cab5da5a75be873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player/세인트루이스.prefab using Guid(b2b29f781ce95994cab5da5a75be873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfde0135d59144cfc8bedbe5fcb1ace0') in 0.090984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.268082 seconds.
+  path: Assets/4. Models/1.PreFab/Player/세인트루이스.prefab
+  artifactKey: Guid(b2b29f781ce95994cab5da5a75be873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player/세인트루이스.prefab using Guid(b2b29f781ce95994cab5da5a75be873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '728e01a4f0a553577ce32ecfcf721c83') in 0.072973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.499201 seconds.
+  path: Assets/4. Models/1.PreFab/Player/세인트루이스.prefab
+  artifactKey: Guid(b2b29f781ce95994cab5da5a75be873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player/세인트루이스.prefab using Guid(b2b29f781ce95994cab5da5a75be873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1184362eec1a0455450869feb8af063e') in 0.069908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.708660 seconds.
+  path: Assets/1. Scenes/JungHawn.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1. Scenes/JungHawn.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '236fa14051ee8e1aab46b850a59713d2') in 0.007372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.600683 seconds.
+  path: Assets/4. Models/1.PreFab/Cam
+  artifactKey: Guid(2e9d109ed48e85041940374024589257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Cam using Guid(2e9d109ed48e85041940374024589257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1e38cbd94f4c578ca351ac592534023') in 0.005913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.890499 seconds.
+  path: Assets/4. Models/1.PreFab/Cam/VirtualCam.prefab
+  artifactKey: Guid(76db8e771d3e87d4a80a92540a6ee976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Cam/VirtualCam.prefab using Guid(76db8e771d3e87d4a80a92540a6ee976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e807fe11a7b8c338911e2507d308704') in 0.011876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.695320 seconds.
+  path: Assets/4. Models/1.PreFab/Cam/Main Camera.prefab
+  artifactKey: Guid(d60df72d7054b3a40ad827edb8d99e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Cam/Main Camera.prefab using Guid(d60df72d7054b3a40ad827edb8d99e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd78cde7cea3c07f446f2118d2393cdd') in 0.008408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.860846 seconds.
+  path: Assets/1. Scenes/SeungHoon.unity
+  artifactKey: Guid(6f9070d1bcd96b54fb4610babd18a93a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1. Scenes/SeungHoon.unity using Guid(6f9070d1bcd96b54fb4610babd18a93a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c716bd6cb5989dc26ca179e82a120fc') in 0.002809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 72.208165 seconds.
+  path: Assets/4. Models/1.PreFab/Player/세인트루이스.prefab
+  artifactKey: Guid(b2b29f781ce95994cab5da5a75be873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player/세인트루이스.prefab using Guid(b2b29f781ce95994cab5da5a75be873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd06e632e7f8c09d8f47f5df142431b5a') in 0.071944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.408613 seconds.
+  path: Assets/4. Models/1.PreFab/Player/세인트루이스.prefab
+  artifactKey: Guid(b2b29f781ce95994cab5da5a75be873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player/세인트루이스.prefab using Guid(b2b29f781ce95994cab5da5a75be873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff326a80981a51720bc15cad9493ff8') in 0.070906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.108687 seconds.
+  path: Assets/4. Models/1.PreFab/Player/유키카제.prefab
+  artifactKey: Guid(c8081053ecb72cf4bb7421083c227a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player/유키카제.prefab using Guid(c8081053ecb72cf4bb7421083c227a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9acdb2b8d738026ffb8d7401d1b1f40') in 0.071612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.039141 seconds.
+  path: Assets/4. Models/1.PreFab/Player/클리블랜드.prefab
+  artifactKey: Guid(3057815847ab0ec4ab92bbc6770cd8ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player/클리블랜드.prefab using Guid(3057815847ab0ec4ab92bbc6770cd8ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f519a568e2e185f7af6ab38e034b412b') in 0.068554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.061062 seconds.
+  path: Assets/4. Models/1.PreFab/Player/유키카제.prefab
+  artifactKey: Guid(c8081053ecb72cf4bb7421083c227a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player/유키카제.prefab using Guid(c8081053ecb72cf4bb7421083c227a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b712b1ecb0baf1326f35d6b50822c94e') in 0.073574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.912693 seconds.
+  path: Assets/4. Models/1.PreFab/Player/클리블랜드.prefab
+  artifactKey: Guid(3057815847ab0ec4ab92bbc6770cd8ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player/클리블랜드.prefab using Guid(3057815847ab0ec4ab92bbc6770cd8ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b530dfacb11bdf56c5ccac5e1b3c30f') in 0.064565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.271799 seconds.
+  path: Assets/4. Models/1.PreFab/Player/클리블랜드.prefab
+  artifactKey: Guid(3057815847ab0ec4ab92bbc6770cd8ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player/클리블랜드.prefab using Guid(3057815847ab0ec4ab92bbc6770cd8ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39517116b8034b381674b7e121168c68') in 0.074385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.245878 seconds.
+  path: Assets/4. Models/1.PreFab/Player/클리블랜드.prefab
+  artifactKey: Guid(3057815847ab0ec4ab92bbc6770cd8ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player/클리블랜드.prefab using Guid(3057815847ab0ec4ab92bbc6770cd8ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d0596518716171bf42e82d9722d2da9') in 0.067018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.208100 seconds.
+  path: Assets/4. Models/1.PreFab/Player/유키카제.prefab
+  artifactKey: Guid(c8081053ecb72cf4bb7421083c227a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player/유키카제.prefab using Guid(c8081053ecb72cf4bb7421083c227a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd936c10eaf2f1203612e39ba625ae06c') in 0.065949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.068275 seconds.
+  path: Assets/4. Models/1.PreFab/Player/유키카제.prefab
+  artifactKey: Guid(c8081053ecb72cf4bb7421083c227a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. Models/1.PreFab/Player/유키카제.prefab using Guid(c8081053ecb72cf4bb7421083c227a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ebb942526832f3c0fdac7a544fabbb0') in 0.074408 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013731 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000227FACBF820 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000227FDBF44A0 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000227F35EC020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A0A36B010 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A04E56740 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\lilToon.Editor.External.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000022A05D006F0 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.01 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.IOException: Sharing violation on path C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Assets\8. DownLoadAsset\lilToon\Editor\CurrentRP.txt
   at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <d6232873609549b8a045fa15811a5bd3>:0 
   at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <d6232873609549b8a045fa15811a5bd3>:0 
   at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00055] in <d6232873609549b8a045fa15811a5bd3>:0 
-  at System.IO.StreamReader..ctor (System.String path, System.Boolean detectEncodingFromByteOrderMarks) [0x00007] in <d6232873609549b8a045fa15811a5bd3>:0 
-  at System.IO.StreamReader..ctor (System.String path) [0x00000] in <d6232873609549b8a045fa15811a5bd3>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string)
-  at lilToon.lilStartup.lilStartupMethod () [0x00054] in C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Assets\8. DownLoadAsset\lilToon\Editor\lilStartup.cs:72 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <d6232873609549b8a045fa15811a5bd3>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append) [0x00008] in <d6232873609549b8a045fa15811a5bd3>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool)
+  at lilToon.lilStartup.lilStartupMethod () [0x0009b] in C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Assets\8. DownLoadAsset\lilToon\Editor\lilStartup.cs:80 
   at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
   at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <d6232873609549b8a045fa15811a5bd3>:0 
    --- End of inner exception stack trace ---
@@ -291,40 +558,176 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.991 seconds
+- Completed reload, in  2.214 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1991ms)
-		BeginReloadAssembly (208ms)
+	ReloadAssembly (2215ms)
+		BeginReloadAssembly (223ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (67ms)
+		EndReloadAssembly (1833ms)
+			LoadAssemblies (141ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (521ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (88ms)
+			SetupLoadedEditorAssemblies (947ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (254ms)
+				ProcessInitializeOnLoadAttributes (523ms)
+				ProcessInitializeOnLoadMethodAttributes (133ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5845 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 84 unused Assets / (13.3 MB). Loaded Objects now: 6640.
+Memory consumption went from 287.8 MB to 274.5 MB.
+Total: 16.854300 ms (FindLiveObjects: 0.925300 ms CreateObjectMapping: 0.544800 ms MarkObjects: 5.662000 ms  DeleteObjects: 9.721000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012005 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000227FACBF820 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000227F87B7030 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000227F21DA020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000227F21DA020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000227FC8FDF40 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\lilToon.Editor.External.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000227F3A86020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.924 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1925ms)
+		BeginReloadAssembly (175ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (54ms)
-		EndReloadAssembly (1656ms)
-			LoadAssemblies (167ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1601ms)
+			LoadAssemblies (128ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (525ms)
+			SetupTypeCache (447ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (70ms)
-			SetupLoadedEditorAssemblies (831ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (830ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (235ms)
+				ProcessInitializeOnLoadAttributes (439ms)
+				ProcessInitializeOnLoadMethodAttributes (121ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5846 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 84 unused Assets / (13.1 MB). Loaded Objects now: 6655.
+Memory consumption went from 287.6 MB to 274.6 MB.
+Total: 13.000300 ms (FindLiveObjects: 0.546600 ms CreateObjectMapping: 0.425600 ms MarkObjects: 3.785700 ms  DeleteObjects: 8.241200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013438 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000227FC42CA80 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000227F1C82030 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.Searcher.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000227F21DA020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000227F21DA020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000227FC8FDF40 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\lilToon.Editor.External.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000227F3A86020 doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ggms2\OneDrive\문서\GitHub\Levitation-moment\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.920 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1921ms)
+		BeginReloadAssembly (191ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1588ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (432ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (837ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (219ms)
-				ProcessInitializeOnLoadAttributes (449ms)
-				ProcessInitializeOnLoadMethodAttributes (129ms)
-				AfterProcessingInitializeOnLoad (15ms)
+				BeforeProcessingInitializeOnLoad (217ms)
+				ProcessInitializeOnLoadAttributes (456ms)
+				ProcessInitializeOnLoadMethodAttributes (127ms)
+				AfterProcessingInitializeOnLoad (17ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.75 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5836 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 84 unused Assets / (13.2 MB). Loaded Objects now: 6492.
-Memory consumption went from 266.6 MB to 253.4 MB.
-Total: 14.225500 ms (FindLiveObjects: 0.899200 ms CreateObjectMapping: 0.597400 ms MarkObjects: 4.503300 ms  DeleteObjects: 8.224600 ms)
+Unloading 5846 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 84 unused Assets / (13.1 MB). Loaded Objects now: 6670.
+Memory consumption went from 287.7 MB to 274.6 MB.
+Total: 16.768400 ms (FindLiveObjects: 0.572600 ms CreateObjectMapping: 0.846700 ms MarkObjects: 5.591500 ms  DeleteObjects: 9.756200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 

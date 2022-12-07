@@ -38,6 +38,7 @@ public class Recoil : MonoBehaviour
 
     public void Run()
     {
+        re = 0;
         isRun = true;
         StartRecoil();
     }
