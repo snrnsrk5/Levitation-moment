@@ -8,7 +8,7 @@ public class GunCtrl : MonoBehaviour
     public GunSoundManager gunSoundManager;
     public float randomReloadTime;
     public float reloadTime;
-    private float reload = 0;
+    public float reload = 0;
 
     
 
@@ -21,6 +21,7 @@ public class GunCtrl : MonoBehaviour
     void Awake()
     {
         randomReloadTime = reloadTime + Random.RandomRange(-(reload * 0.1f), (reload * 0.1f));
+        reload = randomReloadTime;
     }
     void Update()
     {
@@ -32,6 +33,7 @@ public class GunCtrl : MonoBehaviour
     {
         if (Input.GetMouseButton(0) && isGun == false)
         {
+            randomReloadTime = reloadTime + Random.RandomRange(-(reload * 0.1f), (reload * 0.1f));
             isGun = true;
             Recoil.Run();
 
@@ -62,9 +64,9 @@ public class GunCtrl : MonoBehaviour
         {
             reload += 1 * Time.deltaTime;
 
-            if (reload > randomReloadTime)
+            if (reload >= randomReloadTime)
             {
-                randomReloadTime = reloadTime + Random.RandomRange(-(reload * 0.1f), (reload * 0.1f));
+                reload = randomReloadTime;
                 isGun = false;
             }
         }

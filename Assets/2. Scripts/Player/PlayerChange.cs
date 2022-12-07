@@ -5,7 +5,7 @@ using Cinemachine;
 public class PlayerChange : MonoBehaviour
 {
     public GameObject[] player;
-
+    public PlayerSelectFrame playerSelectFrame;
     public int ch = 0;
 
     void Start()
@@ -13,6 +13,7 @@ public class PlayerChange : MonoBehaviour
         player[0].SetActive(true);
         player[1].SetActive(false);
         player[2].SetActive(false);
+        playerSelectFrame.Select(ch);
     }
 
     void Update()
@@ -29,6 +30,7 @@ public class PlayerChange : MonoBehaviour
             player[1].SetActive(false);
             player[2].SetActive(false);
             ch = 0;
+            playerSelectFrame.Select(ch);
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) && ch != 1)
         {
@@ -37,6 +39,7 @@ public class PlayerChange : MonoBehaviour
             player[1].SetActive(true);
             player[2].SetActive(false);
             ch = 1;
+            playerSelectFrame.Select(ch);
         }
         if (Input.GetKeyDown(KeyCode.Alpha3) && ch != 2)
         {
@@ -45,6 +48,7 @@ public class PlayerChange : MonoBehaviour
             player[1].SetActive(false);
             player[2].SetActive(true);
             ch = 2;
+            playerSelectFrame.Select(ch);
         }
         
     }

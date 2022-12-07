@@ -47,6 +47,7 @@
      <Compile Include="Assets\2. Scripts\ThirdPersonShooter\BulletProjectile.cs" />
      <Compile Include="Assets\2. Scripts\Player\Gun\GunSoundManager.cs" />
      <Compile Include="Assets\2. Scripts\Player\Hp\HealthBar.cs" />
+     <Compile Include="Assets\2. Scripts\UI\PlayerSelectFrame.cs" />
      <Compile Include="Assets\2. Scripts\Enmey\stateShipIdle.cs" />
      <Compile Include="Assets\2. Scripts\Spawn\Move.cs" />
      <Compile Include="Assets\2. Scripts\Player\Gun\Recoil.cs" />
@@ -69,6 +70,7 @@
      <Compile Include="Assets\2. Scripts\Behaviour\State\stateDie.cs" />
      <Compile Include="Assets\8. DownLoadAsset\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
      <Compile Include="Assets\2. Scripts\Player\Gun\GunCtrl.cs" />
+     <Compile Include="Assets\2. Scripts\UI\PlayerInput.cs" />
      <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\Button_Sprite.cs" />
      <Compile Include="Assets\2. Scripts\Player\Camera\CameraCtrl.cs" />
      <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\World_Bar.cs" />

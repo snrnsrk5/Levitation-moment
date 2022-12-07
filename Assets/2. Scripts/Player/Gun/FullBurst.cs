@@ -9,7 +9,7 @@ public class FullBurst : MonoBehaviour
 
     public float randomReloadTime;
     public float reloadTime;
-    private float reload = 0;
+    public float reload = 0;
 
     private bool isGun = false;
 
@@ -21,6 +21,7 @@ public class FullBurst : MonoBehaviour
     void Start()
     {
         randomReloadTime = reloadTime + Random.RandomRange(-(reload * 0.1f), (reload * 0.1f));
+        reload = randomReloadTime;
     }
 
     void Update()
@@ -35,9 +36,9 @@ public class FullBurst : MonoBehaviour
         {
             reload += 1 * Time.deltaTime;
 
-            if (reload > randomReloadTime)
+            if (reload >= randomReloadTime)
             {
-                randomReloadTime = reloadTime + Random.RandomRange(-(reload * 0.1f), (reload * 0.1f));
+                reload = randomReloadTime;
                 isGun = false;
             }
         }
@@ -63,6 +64,7 @@ public class FullBurst : MonoBehaviour
 
     void Fire()
     {
+        randomReloadTime = reloadTime + Random.RandomRange(-(reload * 0.1f), (reload * 0.1f));
         isGun = true;
         Recoil.Run();
 
