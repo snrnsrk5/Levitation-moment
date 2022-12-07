@@ -14,7 +14,6 @@ public class SecondaryBattery : MonsterFSM_Behaviour
         hp = maxHp;
     }
 
-    private Transform healthBarTrans;
     // Start is called before the first frame update
     protected override void Start()
     {
