@@ -6,11 +6,12 @@ public class BulletMove : MonoBehaviour
 {
     public float speed;
     public int damage;
-
+    public int realDam;
     public GameObject target;
     void Start()
     {
-        Destroy(gameObject, 5f);
+        realDam = Random.Range((int)(damage * 0.8f), (int)(damage * 1.2f));
+        Destroy(gameObject, 10f);
 
        
   
@@ -29,8 +30,8 @@ public class BulletMove : MonoBehaviour
         if (iDmgAble != null)
         {
             //Debug.Log("���� ������");
-            iDmgAble.setDmg(damage, null); //atk ������ �� �ʿ����?
-            DamagePopup.Create(other.transform.position, damage, false);
+            iDmgAble.setDmg(realDam, null); //atk ������ �� �ʿ����?
+            DamagePopup.Create(other.transform.position, realDam, false);
             //for문으로 
             //�׷��� �÷��̾�� MonsterFsm�� attackBehaviour�� �����ݾ� �׷��� �׷��� 0�̴ϱ� �ȹٲ�ſ���
         }

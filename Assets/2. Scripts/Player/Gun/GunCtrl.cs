@@ -4,17 +4,27 @@ using UnityEngine;
 
 public class GunCtrl : MonoBehaviour
 {
+    [Header("스크립트")]
     public Recoil Recoil;
     public GunSoundManager gunSoundManager;
-    public float randomReloadTime;
-    public float reloadTime;
-    public float reload = 0;
-
     
+    [Header("장전")] 
+    public float reloadTime;
+    public float randomReloadTime;
+    public float reload = 0;
+    public bool isFind = true;
+    
+    [Header("집탄")] 
+    [Range(50,300)] public float dispersion = 1; // 최대로 분산될수 있는 거리( 10km당 nM)
+    [Range(1f,3f)] public float sigma = 1; // 시그마가 1일때 보다 3일때 3배 중앙으로 모일확률이 높음
+    private float realdispersion; // 최대분산을 수치화
+    public float rng; // 실제 분산
 
     int i = 0;
     private bool isGun = false;
+    
 
+    [Header("프리팹")] 
     public GameObject Bullet;
     public GunData[] gunDatas;
 
@@ -22,6 +32,7 @@ public class GunCtrl : MonoBehaviour
     {
         randomReloadTime = reloadTime + Random.RandomRange(-(reload * 0.1f), (reload * 0.1f));
         reload = randomReloadTime;
+        dispersion = dispersion * 0.02f;
     }
     void Update()
     {
@@ -31,7 +42,7 @@ public class GunCtrl : MonoBehaviour
 
     void GunFire()
     {
-        if (Input.GetMouseButton(0) && isGun == false)
+        if (Input.GetMouseButton(0) && isGun == false && isFind)
         {
             randomReloadTime = reloadTime + Random.RandomRange(-(reload * 0.1f), (reload * 0.1f));
             isGun = true;
@@ -42,9 +53,10 @@ public class GunCtrl : MonoBehaviour
             float rol = 1;
             for (int bar = 0; bar < gunDatas[i].barrel; bar++)
             {
-                float rng = Random.RandomRange(0.1f, 1f);
+                rng = Random.RandomRange(1, sigma);
+                float realRng = Random.RandomRange(dispersion * 0.1f, dispersion / rng);
                 Instantiate(Bullet, gunDatas[i].pos.transform.position, gunDatas[i].pos.transform.rotation
-                    * Quaternion.Euler(rng * 0.5f, bar * rng, rng * 0.5f));
+                    * Quaternion.Euler(realRng * 0.5f, bar * realRng, realRng * 0.5f));
 
                 rol *= -1;
             }
