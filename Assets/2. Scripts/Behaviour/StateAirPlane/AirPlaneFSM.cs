@@ -2,56 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SecondaryBattery : MonsterFSM_Behaviour
+public class AirPlaneFSM : MonsterFSM_Behaviour
 {
+    public HealthBar healthBar;
+    public Transform stopDistCheck;
 
-
-
-
-    public GameObject healthBar;
     private void Awake()
     {
         hp = maxHp;
     }
 
-    // Start is called before the first frame update
     protected override void Start()
     {
+        fsmManager = new StateMachine<MonsterFSM>(this, new stateAirPlaneIdle());
+        fsmManager.AddStateList(new stateAirPlaneAtk());
+        fsmManager.AddStateList(new stateAirPlaneDie());
+        fsmManager.AddStateList(new stateAirPlaneMove());
+        fsmManager.AddStateList(new stateAirPlaneExit());
 
-        //Debug.Log("세컨더리 배터리");
-        fsmManager = new StateMachine<MonsterFSM>(this, new stateIdleBattery());
-        fsmManager.AddStateList(new stateAtkBattery());
-        fsmManager.AddStateList(new stateMainBatteryDie());
 
-        OnAwakeAtkBehaviour();
 
-        atkRange = nowAtkBehaviour?.atkRange ?? 5.0f;
-   
+        OnAwakeAtkBehaviour(); //그래서 MonsterFSM_Behaviour atakeBehaviour
 
-        
+        atkRange = nowAtkBehaviour?.atkRange ?? 5.0f; //
 
         healthSystem = new HealthSystem(maxHp);
-        GameObject newHealthBar = Instantiate(healthBar, new Vector3(transform.GetChild(0).position.x , transform.GetChild(0).position.y, transform.GetChild(0).position.z ), Quaternion.identity);
-        newHealthBar.transform.SetParent(transform.GetChild(0));
-        newHealthBar.GetComponent<HealthBar>().Setup(healthSystem);
 
-        newHealthBar.transform.localPosition = Vector3.zero;
+        healthBar.Setup(healthSystem);
 
 
-        newHealthBar.transform.localPosition = new Vector3(0, 0.0171f, 0.03f);
 
 
+        //
     }
 
-
- 
-    public override void OnExecuteAttack(int attackIndex)
+    public override void OnExecuteAttack(int attackIndex) //FSM이라 그런지 여기에 공격이있네
     {
-        if(getFlagLive)
+        if (getFlagLive) //살아있을때만 공격 //이미 있을거 같긴한데
         {
             base.OnExecuteAttack(attackIndex);
         }
-      
+
     }
 
     public override void setDmg(int dmg, GameObject atkEffectPrefab)
@@ -66,13 +57,14 @@ public class SecondaryBattery : MonsterFSM_Behaviour
 
 
         hp -= dmg;
-        if(hp <= 0) //-가 안되게 하고 
+        healthSystem.Damage(dmg);
+        if (hp <= 0) //-가 안되게 하고 
         {
             hp = 0;
         }
 
 
-        healthSystem.Damage(dmg);
+
 
 
         if (atkEffectPrefab)
@@ -92,21 +84,19 @@ public class SecondaryBattery : MonsterFSM_Behaviour
             //
             //맞는 소리
             //맞는 이펙트 넣기
-            
+
             //죽은 상태면 stateDie로 상태 전환 
-            fsmManager.ChangeState<stateMainBatteryDie>(); //
+            fsmManager.ChangeState<stateAirPlaneDie>(); //
 
         }
     }
     protected override void Update()
     {
+
+        Debug.Log(fsmManager.getNowState);
         OnCheckAtkBehaviour();
         base.Update();
 
     }
-
-
-
-
 
 }

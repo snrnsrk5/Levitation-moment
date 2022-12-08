@@ -5,7 +5,7 @@ using UnityEngine;
  
 public class stateAtkController : MonoBehaviour
 {  
-    public delegate void OnStartStateAtkController(); 
+    public delegate void OnStartStateAtkController(); //델리게이트
     public OnStartStateAtkController stateAtkControllerStartHandler; //이거 왜한겨
 
     public delegate void OnEndStateAtkController(); 
@@ -27,6 +27,7 @@ public class stateAtkController : MonoBehaviour
      
     private void stateAtkControllerStart()
     {
+        //타이밍이라면 여기서 그거하겠지? 공격할때와 플레이어까지 닿는 시간이 시작되는부분
         //뭔가가 뭔가 하는건가
     }
 

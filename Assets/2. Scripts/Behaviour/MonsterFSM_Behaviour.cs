@@ -124,6 +124,7 @@ public class MonsterFSM_Behaviour : MonsterFSM, IAtkAble, IDmgAble
                     if ((nowAtkBehaviour == null) || (nowAtkBehaviour.importanceAtkNo < behaviour.importanceAtkNo)) //이게 중요도구나 //숫자가 제일낮은거부터 실행
                     {
                         nowAtkBehaviour = behaviour;
+                        Debug.Log(nowAtkBehaviour.name);
                     }
                 }
             }

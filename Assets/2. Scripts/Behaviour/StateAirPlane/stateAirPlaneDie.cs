@@ -3,8 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
- 
-public class stateDie : State<MonsterFSM>
+
+[Serializable]
+public class stateAirPlaneDie : State<MonsterFSM>
 {
     private Animator animator;
 
@@ -24,12 +25,12 @@ public class stateDie : State<MonsterFSM>
 
     public override void OnUpdate(float deltaTime)
     {
-        if (stateMachine.getStateDurationTime > 3.0f)
+        if (stateMachine.getStateDurationTime > 0.5f)
         {
             Debug.Log("ав╠Б");
             GameObject.Destroy(stateMachineClass.gameObject);
         }
     }
 
-    public override void OnEnd()   { }
+    public override void OnEnd() { }
 }
