@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
  
-[Serializable]
 public class stateDie : State<MonsterFSM>
 {
     private Animator animator;

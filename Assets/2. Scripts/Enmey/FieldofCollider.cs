@@ -9,23 +9,25 @@ public class FieldofCollider : MonoBehaviour
     public LookAtPlayer lookAtPlayer;
     public Transform target; //이걸 다른사람이 알수있게
 
-   /* private void OnTriggerStay(Collider collision)
-    {
-        Debug.Log("트리거 세이" + collision.gameObject.name);
-        lookAtPlayer.LookPlayer();
-    }*/
 
     private void OnTriggerStay(Collider other)
     {
       
         if (other.CompareTag("Player"))
         {
-            Debug.Log("트리거 세이" + other.gameObject.name);
-            lookAtPlayer.LookPlayer();
 
-
-
+            //아마도 taret이 있다 바로 사라지니까 그런거아닐까?
             target = other.transform;
+            Debug.Log("트리거 세이" + other.gameObject.name);
+
+            if(lookAtPlayer != null)
+            {
+                lookAtPlayer.LookPlayer();
+            }
+   
+
+
+
 
             //여기에 쏘는 코드
             //적한테 쏘는 코드 
@@ -36,10 +38,7 @@ public class FieldofCollider : MonoBehaviour
             //쿨타임쓸일이 많은데 이걸 뭔가 함수화 시키면 되지 않을까? 
             //FUncitonTImer하면 될지도 이걸 반복하면 되긴하는데, 계속 내부적으로 만들 이유는 없잔항
         }
-        else
-        {
-            target = null;
-        }
+       
     }
 
     private void OnTriggerExit(Collider other)

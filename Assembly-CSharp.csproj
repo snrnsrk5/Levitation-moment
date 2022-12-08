@@ -61,6 +61,7 @@
     <Compile Include="Assets\2. Scripts\MouseEvent.cs" />
     <Compile Include="Assets\2. Scripts\Behaviour\CollisionProjectileAtk.cs" />
     <Compile Include="Assets\2. Scripts\Player\PlayerChange.cs" />
+    <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\AirPlaneFSM.cs" />
     <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\FunctionUpdater.cs" />
     <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\UI_BarMultiple.cs" />
     <Compile Include="Assets\8. DownLoadAsset\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
@@ -71,9 +72,12 @@
     <Compile Include="Assets\2. Scripts\Spawn\Move.cs" />
     <Compile Include="Assets\2. Scripts\Player\Gun\Recoil.cs" />
     <Compile Include="Assets\2. Scripts\Player\Hp\HealthSystem.cs" />
+    <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneDie.cs" />
     <Compile Include="Assets\2. Scripts\Spawn\SpawanData.cs" />
     <Compile Include="Assets\2. Scripts\Manager\GameManager.cs" />
     <Compile Include="Assets\2. Scripts\CodeMonkey\Assets.cs" />
+    <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneMove.cs" />
+    <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneIdle.cs" />
     <Compile Include="Assets\2. Scripts\Player\Camera\PlayerSerachCamera.cs" />
     <Compile Include="Assets\2. Scripts\Behaviour\StateBattery\stateIdleBattery.cs" />
     <Compile Include="Assets\2. Scripts\DamagePopups\GameAssets.cs" />
@@ -120,7 +124,8 @@
     <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\UI_TextComplex.cs" />
     <Compile Include="Assets\2. Scripts\BillBoard\Camera_BillBoard.cs" />
     <Compile Include="Assets\2. Scripts\Spawn\EnemySpawn.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\SecondaryBattery.cs" />
+    <Compile Include="Assets\2. Scripts\Behaviour\StateBattery\SecondaryBattery.cs" />
+    <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneAtk.cs" />
     <Compile Include="Assets\2. Scripts\CodeMonkey\CMDebug.cs" />
     <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\Button_UI.cs" />
     <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\FunctionPeriodic.cs" />
@@ -137,6 +142,9 @@
     <Compile Include="Assets\2. Scripts\Enmey\FieldofCollider.cs" />
     <Compile Include="Assets\8. DownLoadAsset\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\2. Scripts\Player\Hp\PlayerHealth.cs" />
+    <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneDirectHorizontal.cs" />
+    <Compile Include="Assets\2. Scripts\Behaviour\AirPlaneCollisionProjectileAtk.cs" />
+    <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneExit.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_fakeshadow.shader" />

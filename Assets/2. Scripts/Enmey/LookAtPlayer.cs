@@ -9,8 +9,6 @@ public class LookAtPlayer : MonoBehaviour
     public float startDeg;
     public float degSec = 3f;
 
-    public Collider coll;
-
     float y;
     float z;
 
