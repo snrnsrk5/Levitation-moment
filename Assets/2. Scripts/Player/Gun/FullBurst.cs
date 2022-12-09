@@ -73,9 +73,10 @@ public class FullBurst : MonoBehaviour
         float rol = 1;
         for (int bar = 0; bar < GunCtrl.gunDatas[i].barrel; bar++)
         {
-            float rng = Random.RandomRange(0.1f, 1f);
+            GunCtrl.rng = Random.RandomRange(1, GunCtrl.sigma);
+            float realRng = Random.RandomRange(GunCtrl.dispersion * 0.1f, GunCtrl.dispersion / GunCtrl.rng);
             Instantiate(Bullet, GunCtrl.gunDatas[i].pos.transform.position, GunCtrl.gunDatas[i].pos.transform.rotation
-                * Quaternion.Euler(rng * 0.5f, bar * rng, rng * 0.5f));
+                * Quaternion.Euler(realRng * 0.5f, bar * realRng, realRng * 0.5f));
 
             rol *= -1;
         }

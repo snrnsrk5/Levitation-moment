@@ -5,42 +5,46 @@ using UnityEngine;
 public class ProjectileTypeAtkBehaviour : AtkBehaviour
 {
 
-
-  
+    public AudioSource audioSource;
+    public ParticleSystem particle;
+    public float pitch;
     public override void callAtkMotion(GameObject target = null, Transform posAtkStart = null)
     {
-   
-
-        if (target == null && posAtkStart != null) //Å¸°ÙÀÌ ¾ø°í, ¹ß»çÀ§Ä¡°ÚÁö
+        if (target == null && posAtkStart != null) //Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ß»ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½
         {
             return;
         }
-        //Å¸°ÙÀº Á¤ÇØÁÖ´Â °Å°ÚÁö 
-        
+        //Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½Å°ï¿½ï¿½ï¿½ 
 
-        Vector3 vecProjectile = posAtkStart?.position ?? transform.position; //¹ß»çÀ§Ä¡°¡ ³ÎÀÌ¶ó¸é ÀÚ±âÀ§Ä¡¿¡¼­
+        pitch = Random.RandomRange(0.8f, 1.2f);
+        audioSource.pitch = pitch;
+
+        audioSource.Play();
+        particle.Play();
+
+        Vector3 vecProjectile = posAtkStart?.position ?? transform.position; //ï¿½ß»ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¶ï¿½ï¿½ ï¿½Ú±ï¿½ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½
 
         if (atkEffectPrefab != null)
         {
 
            
 
-            //ÇÁ¸®ÆÕÀÌ ¾ø¾î°¡Áö°í 
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½î°¡ï¿½ï¿½ï¿½ï¿½ 
             GameObject objProjectile = GameObject.Instantiate<GameObject>(atkEffectPrefab, vecProjectile, Quaternion.identity);
-            //±Ùµ¥ ¿Ö ÀÌ°Ô ¾Æ rprojedtilÀÌ ¾øÀ¸´Ï±î Å¸°Ùµµ ¾ø±¸³ª
+            //ï¿½Ùµï¿½ ï¿½ï¿½ ï¿½Ì°ï¿½ ï¿½ï¿½ rprojedtilï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ Å¸ï¿½Ùµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
             Vector3 l_vector = target.transform.position - transform.position;
-            Quaternion ro =  Quaternion.LookRotation(l_vector).normalized; //positionÀº¤· º¤ÅÍ
-            objProjectile.transform.forward = transform.forward ; //»ı¼ºÇÑ ºÎ¸ğÀÇ forward¸¦ º»´Ù. À½ ·ÎÄÃÀÎ°¡
+            Quaternion ro =  Quaternion.LookRotation(l_vector).normalized; //positionï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+            objProjectile.transform.forward = transform.forward ; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Î¸ï¿½ï¿½ï¿½ forwardï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Î°ï¿½
             objProjectile.transform.rotation = ro;
 
             
-            CollisionProjectileAtk projectile = objProjectile.GetComponent<CollisionProjectileAtk>(); //¿ÀºêÁ¦´Â ÀÌ°É °¡Áö°í ÀÌ´Ï ÇÏ°í
-            //bulletMove¿¡´Â CollisionprojectilAtk¸¦ »ó¼Ó¾È¹ŞÀ¸´Ï±î ½Ã¹ß
+            CollisionProjectileAtk projectile = objProjectile.GetComponent<CollisionProjectileAtk>(); //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìï¿½ï¿½ï¿½ ï¿½Ï°ï¿½
+            //bulletMoveï¿½ï¿½ï¿½ï¿½ CollisionprojectilAtkï¿½ï¿½ ï¿½ï¿½Ó¾È¹ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½Ã¹ï¿½
   
             if (projectile != null)
             {
-                projectile.projectileParents = this.gameObject;  //ºÎ¸ğ¸¦ ÇöÀç·Î 
+                projectile.projectileParents = this.gameObject;  //ï¿½Î¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ 
                 projectile.target = target; 
                 projectile.attackBehaviour = this;
             }

@@ -21,6 +21,4 @@ public class PlayerSerachCamera : MonoBehaviour
         VirtualCamera.Follow = GameObject.FindGameObjectWithTag("CamRoot").transform;
         VirtualCamera.LookAt = GameObject.FindGameObjectWithTag("CamRoot").transform;
     }
-
-    
 }

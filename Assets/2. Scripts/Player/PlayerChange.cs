@@ -10,9 +10,10 @@ public class PlayerChange : MonoBehaviour
 
     void Start()
     {
-        player[0].SetActive(true);
         player[1].SetActive(false);
         player[2].SetActive(false);
+        player[0].SetActive(true);
+        
         playerSelectFrame.Select(ch);
     }
 
@@ -25,10 +26,9 @@ public class PlayerChange : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1) && ch != 0)
         {
-            
-            player[0].SetActive(true);
             player[1].SetActive(false);
             player[2].SetActive(false);
+            player[0].SetActive(true);
             ch = 0;
             playerSelectFrame.Select(ch);
         }
@@ -36,8 +36,8 @@ public class PlayerChange : MonoBehaviour
         {
             
             player[0].SetActive(false);
-            player[1].SetActive(true);
             player[2].SetActive(false);
+            player[1].SetActive(true);
             ch = 1;
             playerSelectFrame.Select(ch);
         }
