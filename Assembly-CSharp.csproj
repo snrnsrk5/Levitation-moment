@@ -35,270 +35,15 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-<<<<<<< HEAD
-=======
-  <PropertyGroup>
-    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.16</UnityProjectGeneratorVersion>
-    <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
-    <UnityVersion>2021.3.15f1</UnityVersion>
-  </PropertyGroup>
-  <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\2. Scripts\StateMachineBehaviour\MAtkTypeStateMachineBehaviour.cs" />
-    <Compile Include="Assets\2. Scripts\FOV\FieldOfView.cs" />
-    <Compile Include="Assets\2. Scripts\MouseEvent.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\CollisionProjectileAtk.cs" />
-    <Compile Include="Assets\2. Scripts\Player\PlayerChange.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\AirPlaneFSM.cs" />
-    <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\FunctionUpdater.cs" />
-    <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\UI_BarMultiple.cs" />
-    <Compile Include="Assets\8. DownLoadAsset\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
-    <Compile Include="Assets\2. Scripts\ThirdPersonShooter\BulletProjectile.cs" />
-    <Compile Include="Assets\2. Scripts\Player\Gun\GunSoundManager.cs" />
-    <Compile Include="Assets\2. Scripts\Player\Hp\HealthBar.cs" />
-    <Compile Include="Assets\2. Scripts\Enmey\stateShipIdle.cs" />
-    <Compile Include="Assets\2. Scripts\Spawn\Move.cs" />
-    <Compile Include="Assets\2. Scripts\Player\Gun\Recoil.cs" />
-    <Compile Include="Assets\2. Scripts\Player\Hp\HealthSystem.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneDie.cs" />
-    <Compile Include="Assets\2. Scripts\Spawn\SpawanData.cs" />
-    <Compile Include="Assets\2. Scripts\Manager\GameManager.cs" />
-    <Compile Include="Assets\2. Scripts\CodeMonkey\Assets.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneMove.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneIdle.cs" />
-    <Compile Include="Assets\2. Scripts\Player\Camera\PlayerSerachCamera.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\StateBattery\stateIdleBattery.cs" />
-    <Compile Include="Assets\2. Scripts\DamagePopups\GameAssets.cs" />
-    <Compile Include="Assets\2. Scripts\FSM\stateMove.cs" />
-    <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\UI_Sprite.cs" />
-    <Compile Include="Assets\2. Scripts\Player\Gun\FullBurst.cs" />
-    <Compile Include="Assets\11.InputSystem\StarterAssetsInputs.cs" />
-    <Compile Include="Assets\2. Scripts\Player\Hp\ShipEnemyHealthBar.cs" />
-    <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\UI_Bar.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\IAtkAble.cs" />
-    <Compile Include="Assets\2. Scripts\Enmey\LookAtPlayer.cs" />
-    <Compile Include="Assets\2. Scripts\Player\Hp\LivingEntity.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\State\stateDie.cs" />
-    <Compile Include="Assets\8. DownLoadAsset\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
-    <Compile Include="Assets\2. Scripts\Player\Gun\GunCtrl.cs" />
-    <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\Button_Sprite.cs" />
-    <Compile Include="Assets\2. Scripts\Player\Camera\CameraCtrl.cs" />
-    <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\World_Bar.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\MeleeTypeAtkBehaviour.cs" />
-    <Compile Include="Assets\2. Scripts\StateMachineBehaviour\IdleTypeStateMachineBehaviour.cs" />
-    <Compile Include="Assets\2. Scripts\Enmey\ColliderRotation.cs" />
-    <Compile Include="Assets\2. Scripts\Player\Hp\HpBar.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\stateAtkController.cs" />
-    <Compile Include="Assets\2. Scripts\Player\Move\PlayerMove.cs" />
-    <Compile Include="Assets\2. Scripts\DamagePopups\DamagePopup.cs" />
-    <Compile Include="Assets\2. Scripts\BulletMove.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\ProjectileTypeAtkBehaviour.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\StateBattery\stateMainBatteryDie.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\CollisionMeleeAtk.cs" />
-    <Compile Include="Assets\2. Scripts\FOV\FieldOfView_editor.cs" />
-    <Compile Include="Assets\2. Scripts\ThirdPersonShooter\BulletTarget.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\State\stateIdle.cs" />
-    <Compile Include="Assets\2. Scripts\Enmey\EnemyShootProjectile.cs" />
-    <Compile Include="Assets\8. DownLoadAsset\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
-    <Compile Include="Assets\8. DownLoadAsset\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
-    <Compile Include="Assets\2. Scripts\Enmey\ShipEnemy.cs" />
-    <Compile Include="Assets\8. DownLoadAsset\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\IDmgAble.cs" />
-    <Compile Include="Assets\2. Scripts\FSM\FiniteStateMachine.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\StateBattery\stateAtkBattery.cs" />
-    <Compile Include="Assets\2. Scripts\FSM\MonsterFSM.cs" />
-    <Compile Include="Assets\2. Scripts\Enmey\stateShipMove.cs" />
-    <Compile Include="Assets\2. Scripts\Player\Move\PlayerRoot.cs" />
-    <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\UI_TextComplex.cs" />
-    <Compile Include="Assets\2. Scripts\BillBoard\Camera_BillBoard.cs" />
-    <Compile Include="Assets\2. Scripts\Spawn\EnemySpawn.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\StateBattery\SecondaryBattery.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneAtk.cs" />
-    <Compile Include="Assets\2. Scripts\CodeMonkey\CMDebug.cs" />
-    <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\Button_UI.cs" />
-    <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\FunctionPeriodic.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\State\stateAtk.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\AtkBehaviour.cs" />
-    <Compile Include="Assets\8. DownLoadAsset\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
-    <Compile Include="Assets\2. Scripts\Player\Move\ThirdenDash.cs" />
-    <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\UtilsClass.cs" />
-    <Compile Include="Assets\8. DownLoadAsset\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
-    <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\FunctionTimer.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\MonsterFSM_Behaviour.cs" />
-    <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\World_Sprite.cs" />
-    <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\World_Mesh.cs" />
-    <Compile Include="Assets\2. Scripts\Enmey\FieldofCollider.cs" />
-    <Compile Include="Assets\8. DownLoadAsset\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
-    <Compile Include="Assets\2. Scripts\Player\Hp\PlayerHealth.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneDirectHorizontal.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\AirPlaneCollisionProjectileAtk.cs" />
-    <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneExit.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_fakeshadow.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_forward_fakeshadow.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl_onetrans_o.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_tess_onetrans.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_tessellation.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Shaders\Libraries\WaterFoam.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_input.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsmulti_o.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_opaque.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_onetrans_o.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pipeline_lwrp.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterSupport.uxml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\6. Effects\LowPolyFX\Materials\UnlitVertexColour_Alpha.shader" />
-    <None Include="Assets\Graphy - Ultimate Stats Monitor\Changelog.txt" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl_twotrans_o.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl_twotrans.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsmulti.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pipeline_urp.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterAcknowledgements.uxml" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_onetrans.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl_overlay.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_vert.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_overlay_one.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_furonly.shader" />
-    <None Include="Assets\7. SkyBoxs\Readme.txt" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_shadowcaster.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_vert_audiolink.hlsl" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_vert_fur_thirdparty.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_replace_keywords.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_tess_cutout.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl_onetrans.shader" />
-    <None Include="Assets\8. DownLoadAsset\Plugins\Demigiant\DOTween\DOTween.XML" />
-    <None Include="Assets\csc.rsp" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_fur_cutout.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_fur_two.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_overlay.shader" />
-    <None Include="Assets\7. SkyBoxs\ReleaseNotes.txt" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterAbout.uxml" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_fur.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_cutout.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_vert_encryption.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_forward_lite.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterDetectIssues.uss" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_trans.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_transparent.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_macro.hlsl" />
-    <None Include="Assets\Graphy - Ultimate Stats Monitor\Shaders\GraphMobile.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_tess_o.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_forward.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_appdata.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Shaders\Libraries\WaterCaustics.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Shaders\Libraries\WaterLighting.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_input_opt.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterDetectIssues.uxml" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pipeline_hdrp.hlsl" />
-    <None Include="Assets\Graphy - Ultimate Stats Monitor\Font\Northwest-Bold\ERIC-TIRADO-NORTHWEST-LICENSE.txt" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_tess_onetrans_o.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_lite_transparent.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_vert_fur.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_functions_thirdparty.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsmulti_ref.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_frag_alpha.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl.shader" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl_o.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_vert_outline.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\Plugins\Demigiant\DOTween\DOTween.dll" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_gem.shader" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterAbout.uss" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterAcknowledgements.uss" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Shaders\Libraries\Caustics\Caustics.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_furonly_two.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_lite_opaque.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsmulti_gem.shader" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterToolbar.uss" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterSupport.uss" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl_cutout.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_functions.hlsl" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pipeline_brp.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_forward_gem.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Shaders\Libraries\WaterColor.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_baker.shader" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Shaders\Libraries\StylizedWaterForURP.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_twotrans.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_meta.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_tess_opaque.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_lite_cutout.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_forward_refblur.hlsl" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Shaders\Libraries\WaterWaves.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_dummy.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_cutout_oo.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_cutout_o.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_tess_cutout_o.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_tess_trans_o.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_motionvectors.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_tess_cutout.shader" />
-    <None Include="Assets\Graphy - Ultimate Stats Monitor\Font\Roboto\LICENSE.txt" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_oo.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_trans_oo.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl_trans_o.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_trans_o.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_frag.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl_cutout_o.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_twotrans_o.shader" />
-    <None Include="Assets\_Bad_Raccoon\_3D Realistic Terrain Free\README FIRST.txt" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\openlit_core.hlsl" />
-    <None Include="Assets\Graphy - Ultimate Stats Monitor\Shaders\GraphStandard.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_ref.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl_overlay_one.shader" />
-    <None Include="Assets\8. DownLoadAsset\Plugins\Demigiant\DOTween\readme.txt" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_universal2d.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_cutout.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_tess_transparent.shader" />
-    <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterToolbar.uxml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_depthonly.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl_trans.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsmulti_fur.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_tess.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_tess_twotrans_o.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_tess_twotrans.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_furonly_cutout.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_ref_blur.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_depthnormals.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_forward_normal.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_input_base.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_tess_trans.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts.shader" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_forward_fur.hlsl" />
-    <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_o.shader" />
-  </ItemGroup>
->>>>>>> 284f2575c7f7f7dbef789d4f19b8f96dc50a9850
   <ItemGroup>
      <Compile Include="Assets\OmniSARTechnologies\Common\Helper\Transforms\TransformRotate.cs" />
+     <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneDirectHorizontal.cs" />
      <Compile Include="Assets\2. Scripts\StateMachineBehaviour\MAtkTypeStateMachineBehaviour.cs" />
      <Compile Include="Assets\2. Scripts\FOV\FieldOfView.cs" />
      <Compile Include="Assets\2. Scripts\MouseEvent.cs" />
      <Compile Include="Assets\2. Scripts\Behaviour\CollisionProjectileAtk.cs" />
      <Compile Include="Assets\2. Scripts\Player\PlayerChange.cs" />
+     <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\AirPlaneFSM.cs" />
      <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\FunctionUpdater.cs" />
      <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\UI_BarMultiple.cs" />
      <Compile Include="Assets\8. DownLoadAsset\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
@@ -311,9 +56,12 @@
      <Compile Include="Assets\2. Scripts\Player\Gun\Recoil.cs" />
      <Compile Include="Assets\2. Scripts\Player\Hp\HealthSystem.cs" />
      <Compile Include="Assets\OmniSARTechnologies\LiteFPSCounter\Demo\Scripts\SimpleSceneSwitcher.cs" />
+     <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneDie.cs" />
      <Compile Include="Assets\2. Scripts\Spawn\SpawanData.cs" />
      <Compile Include="Assets\2. Scripts\Manager\GameManager.cs" />
      <Compile Include="Assets\2. Scripts\CodeMonkey\Assets.cs" />
+     <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneMove.cs" />
+     <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneIdle.cs" />
      <Compile Include="Assets\2. Scripts\Player\Camera\PlayerSerachCamera.cs" />
      <Compile Include="Assets\2. Scripts\Behaviour\StateBattery\stateIdleBattery.cs" />
      <Compile Include="Assets\2. Scripts\DamagePopups\GameAssets.cs" />
@@ -337,16 +85,19 @@
      <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\World_Bar.cs" />
      <Compile Include="Assets\OmniSARTechnologies\Common\Helper\Reflection\CustomAttributes.cs" />
      <Compile Include="Assets\2. Scripts\Behaviour\MeleeTypeAtkBehaviour.cs" />
+     <Compile Include="Assets\2. Scripts\Behaviour\AirPlaneCollisionProjectileAtk.cs" />
      <Compile Include="Assets\2. Scripts\StateMachineBehaviour\IdleTypeStateMachineBehaviour.cs" />
      <Compile Include="Assets\2. Scripts\Enmey\ColliderRotation.cs" />
      <Compile Include="Assets\DynamicBone\Scripts\DynamicBonePlaneCollider.cs" />
      <Compile Include="Assets\2. Scripts\Player\Hp\HpBar.cs" />
      <Compile Include="Assets\2. Scripts\Behaviour\stateAtkController.cs" />
      <Compile Include="Assets\2. Scripts\Player\Move\PlayerMove.cs" />
+     <Compile Include="Assets\2. Scripts\Player\Gun\ArmsManager.cs" />
      <Compile Include="Assets\2. Scripts\DamagePopups\DamagePopup.cs" />
      <Compile Include="Assets\2. Scripts\BulletMove.cs" />
      <Compile Include="Assets\2. Scripts\Behaviour\ProjectileTypeAtkBehaviour.cs" />
      <Compile Include="Assets\2. Scripts\Behaviour\StateBattery\stateMainBatteryDie.cs" />
+     <Compile Include="Assets\2. Scripts\UI\ArmsCheck.cs" />
      <Compile Include="Assets\2. Scripts\Behaviour\CollisionMeleeAtk.cs" />
      <Compile Include="Assets\2. Scripts\FOV\FieldOfView_editor.cs" />
      <Compile Include="Assets\2. Scripts\Player\Gun\TorpedoCtrl.cs" />
@@ -371,9 +122,11 @@
      <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\UI_TextComplex.cs" />
      <Compile Include="Assets\2. Scripts\BillBoard\Camera_BillBoard.cs" />
      <Compile Include="Assets\2. Scripts\Spawn\EnemySpawn.cs" />
-     <Compile Include="Assets\2. Scripts\Behaviour\SecondaryBattery.cs" />
+     <Compile Include="Assets\2. Scripts\Behaviour\StateBattery\SecondaryBattery.cs" />
+     <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneAtk.cs" />
      <Compile Include="Assets\2. Scripts\CodeMonkey\CMDebug.cs" />
      <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\Button_UI.cs" />
+     <Compile Include="Assets\2. Scripts\Behaviour\StateAirPlane\stateAirPlaneExit.cs" />
      <Compile Include="Assets\DynamicBone\Scripts\DynamicBone.cs" />
      <Compile Include="Assets\2. Scripts\CodeMonkey\Utils\FunctionPeriodic.cs" />
      <Compile Include="Assets\2. Scripts\Behaviour\State\stateAtk.cs" />
@@ -390,8 +143,6 @@
      <Compile Include="Assets\2. Scripts\Enmey\FieldofCollider.cs" />
      <Compile Include="Assets\8. DownLoadAsset\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
      <Compile Include="Assets\2. Scripts\Player\Hp\PlayerHealth.cs" />
-     <Compile Include="Assets\2. Scripts\Player\Gun\ArmsManager.cs" />
-     <Compile Include="Assets\2. Scripts\UI\ArmsCheck.cs" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_fakeshadow.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_forward_fakeshadow.hlsl" />
@@ -399,13 +150,13 @@
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_tess_onetrans.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_tessellation.hlsl" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Shaders\Libraries\WaterFoam.hlsl" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Shaders\Libraries\WaterFoam.hlsl" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_input.hlsl" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsmulti_o.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_opaque.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_onetrans_o.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pipeline_lwrp.hlsl" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterSupport.uxml" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Scripts\UI\StylizedWaterSupport.uxml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\6. Effects\LowPolyFX\Materials\UnlitVertexColour_Alpha.shader" />
      <None Include="Assets\OmniSARTechnologies\LiteFPSCounter\Demo\Shaders\HeavyRenderingTest.shader" />
@@ -413,7 +164,7 @@
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl_twotrans.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsmulti.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pipeline_urp.hlsl" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterAcknowledgements.uxml" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Scripts\UI\StylizedWaterAcknowledgements.uxml" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_onetrans.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl_overlay.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_vert.hlsl" />
@@ -433,24 +184,24 @@
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_fur_two.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_overlay.shader" />
      <None Include="Assets\7. SkyBoxs\ReleaseNotes.txt" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterAbout.uxml" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Scripts\UI\StylizedWaterAbout.uxml" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common.hlsl" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_fur.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_cutout.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_vert_encryption.hlsl" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_forward_lite.hlsl" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterDetectIssues.uss" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Scripts\UI\StylizedWaterDetectIssues.uss" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_trans.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_transparent.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_macro.hlsl" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_tess_o.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_forward.hlsl" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_appdata.hlsl" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Shaders\Libraries\WaterCaustics.hlsl" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Shaders\Libraries\WaterLighting.hlsl" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Shaders\Libraries\WaterCaustics.hlsl" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Shaders\Libraries\WaterLighting.hlsl" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_input_opt.hlsl" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterDetectIssues.uxml" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Scripts\UI\StylizedWaterDetectIssues.uxml" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pipeline_hdrp.hlsl" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_tess_onetrans_o.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_lite_transparent.shader" />
@@ -466,32 +217,32 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_vert_outline.hlsl" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_gem.shader" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterAbout.uss" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Scripts\UI\StylizedWaterAbout.uss" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterAcknowledgements.uss" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Scripts\UI\StylizedWaterAcknowledgements.uss" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Shaders\Libraries\Caustics\Caustics.shader" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Shaders\Libraries\Caustics\Caustics.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_furonly_two.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_lite_opaque.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsmulti_gem.shader" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterToolbar.uss" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterSupport.uss" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Scripts\UI\StylizedWaterToolbar.uss" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Scripts\UI\StylizedWaterSupport.uss" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl_cutout.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_functions.hlsl" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pipeline_brp.hlsl" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_forward_gem.hlsl" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Shaders\Libraries\WaterColor.hlsl" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Shaders\Libraries\WaterColor.hlsl" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_baker.shader" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Shaders\Libraries\StylizedWaterForURP.hlsl" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Shaders\Libraries\StylizedWaterForURP.hlsl" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_twotrans.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_meta.hlsl" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_tess_opaque.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_lite_cutout.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_forward_refblur.hlsl" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Shaders\Libraries\WaterWaves.hlsl" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Shaders\Libraries\WaterWaves.hlsl" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_dummy.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_cutout_oo.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_cutout_o.shader" />
@@ -506,7 +257,6 @@
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_common_frag.hlsl" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl_cutout_o.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_twotrans_o.shader" />
-     <None Include="Assets\_Bad_Raccoon\_3D Realistic Terrain Free\README FIRST.txt" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\openlit_core.hlsl" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\lts_ref.shader" />
@@ -516,7 +266,7 @@
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_cutout.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltspass_tess_transparent.shader" />
      <None Include="Assets\DynamicBone\ReadMe.txt" />
-     <None Include="Assets\8. DownLoadAsset\WaterURP\Scripts\UI\StylizedWaterToolbar.uxml" />
+     <None Include="Assets\8. DownLoadAsset\Stylized Water For URP\Scripts\UI\StylizedWaterToolbar.uxml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\Includes\lil_pass_depthonly.hlsl" />
      <None Include="Assets\8. DownLoadAsset\lilToon\Shader\ltsl_trans.shader" />
@@ -1322,17 +1072,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="StylizedWaterForURP.csproj">
-      <Project>{ad4e5043-b183-423a-7881-16e88442d9c0}</Project>
-      <Name>StylizedWaterForURP</Name>
+    <ProjectReference Include="lilToon.Editor.csproj">
+      <Project>{6ea7da84-b9aa-eba0-9124-c237174df6ca}</Project>
+      <Name>lilToon.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="StylizedWaterForURPEditor.csproj">
       <Project>{95649dc0-f0d0-b0f9-9da5-391ee7f09a29}</Project>
       <Name>StylizedWaterForURPEditor</Name>
     </ProjectReference>
-    <ProjectReference Include="lilToon.Editor.csproj">
-      <Project>{6ea7da84-b9aa-eba0-9124-c237174df6ca}</Project>
-      <Name>lilToon.Editor</Name>
+    <ProjectReference Include="StylizedWaterForURP.csproj">
+      <Project>{ad4e5043-b183-423a-7881-16e88442d9c0}</Project>
+      <Name>StylizedWaterForURP</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
